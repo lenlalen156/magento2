@@ -13,7 +13,7 @@ namespace Magento\Ui\Model;
 class AuthorizationMock extends \Magento\Framework\Authorization
 {
     /**
-     * Check current user permission on resource and privilege
+     * Check current user permission on source and privilege
      *
      * @param   string $resource
      * @param   string $privilege

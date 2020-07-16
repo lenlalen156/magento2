@@ -59,7 +59,7 @@ class AlgorithmAdvancedTest extends \PHPUnit\Framework\TestCase
         $filter = Bootstrap::getObjectManager()
             ->create(
                 \Magento\Catalog\Model\Layer\Filter\Price::class,
-                ['layer' => $layer, 'resource' => $priceResource, 'priceAlgorithm' => $model]
+                ['layer' => $layer, 'source' => $priceResource, 'priceAlgorithm' => $model]
             );
         $filter->setLayer($layer)->setAttributeModel(new DataObject(['attribute_code' => 'price']));
         if ($request !== null) {
@@ -147,6 +147,6 @@ class AlgorithmAdvancedTest extends \PHPUnit\Framework\TestCase
     protected function createInterval($priceResource)
     {
         return Bootstrap::getObjectManager()
-            ->create(\Magento\CatalogSearch\Model\Price\Interval::class, ['resource' => $priceResource]);
+            ->create(\Magento\CatalogSearch\Model\Price\Interval::class, ['source' => $priceResource]);
     }
 }

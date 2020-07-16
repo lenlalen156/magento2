@@ -106,7 +106,7 @@ class RestErrorHandlingTest extends \Magento\TestFramework\TestCase\WebapiAbstra
     /**
      * Perform a negative REST api call test case and compare the results with expected values.
      *
-     * @param string $serviceInfo - REST Service information (i.e. resource path and HTTP method)
+     * @param string $serviceInfo - REST Service information (i.e. source path and HTTP method)
      * @param array $data - Data for the cal
      * @param int $httpStatus - Expected HTTP status
      * @param string|array $errorMessage - \Exception error message

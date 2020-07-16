@@ -134,6 +134,6 @@ class ConfigGeneratorTest extends TestCase
     {
         $returnValue = $this->configGeneratorObject->createResourceConfig();
         $this->assertEquals(ConfigFilePool::APP_ENV, $returnValue->getFileKey());
-        $this->assertEquals(['resource' => ['default_setup' => ['connection' => 'default']]], $returnValue->getData());
+        $this->assertEquals(['source' => ['default_setup' => ['connection' => 'default']]], $returnValue->getData());
     }
 }

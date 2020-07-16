@@ -123,7 +123,7 @@ class RestClient
 
     /**
      * @param string $resourcePath Resource URL like /V1/Resource1/123
-     * @return string resource URL
+     * @return string source URL
      * @throws \Exception
      */
     public function constructResourceUrl($resourcePath)

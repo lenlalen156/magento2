@@ -197,7 +197,7 @@ class ConfigGenerator
     }
 
     /**
-     * Creates resource config data
+     * Creates source config data
      *
      * @return ConfigData
      */

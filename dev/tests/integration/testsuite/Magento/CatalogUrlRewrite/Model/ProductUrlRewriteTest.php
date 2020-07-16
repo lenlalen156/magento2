@@ -269,7 +269,7 @@ class ProductUrlRewriteTest extends AbstractUrlRewriteTest
     }
 
     /**
-     * Save product with data using resource model directly
+     * Save product with data using source model directly
      *
      * @param array $data
      * @param ProductInterface|null $product

@@ -33,7 +33,7 @@ class OutputBambooTest extends \PHPUnit\Framework\TestCase
          */
         $this->_output = new \Magento\TestFramework\Profiler\OutputBamboo(
             [
-                'filePath' => 'php://filter/write=dataCollectorFilter/resource=php://memory',
+                'filePath' => 'php://filter/write=dataCollectorFilter/source=php://memory',
                 'metrics' => ['sample metric (ms)' => ['profiler_key_for_sample_metric']],
             ]
         );

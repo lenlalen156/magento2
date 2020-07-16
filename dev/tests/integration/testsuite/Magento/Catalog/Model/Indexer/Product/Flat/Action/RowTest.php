@@ -94,7 +94,7 @@ class RowTest extends IndexerTestCase
         $productCollection = $layer->getProductCollection();
         self::assertTrue(
             $productCollection->isEnabledFlat(),
-            'Product collection is not using flat resource when flat is on'
+            'Product collection is not using flat source when flat is on'
         );
 
         self::assertEquals(

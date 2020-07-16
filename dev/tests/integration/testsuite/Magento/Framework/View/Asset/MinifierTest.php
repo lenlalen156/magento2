@@ -124,7 +124,7 @@ class MinifierTest extends \PHPUnit\Framework\TestCase
         /** @var \Magento\Framework\App\Request\Http $request */
         $request = $this->objectManager->get(\Magento\Framework\App\Request\Http::class);
         $request->setRequestUri($requestedUri);
-        $request->setParam('resource', $requestedUri);
+        $request->setParam('source', $requestedUri);
 
         $response = $this->getMockBuilder(\Magento\Framework\App\Response\FileInterface::class)
             ->setMethods(['setFilePath'])

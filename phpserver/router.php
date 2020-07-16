@@ -40,7 +40,7 @@ $debug = function ($val) {
 if (php_sapi_name() === 'cli-server') {
     $debug("URI: {$_SERVER["REQUEST_URI"]}");
     if (preg_match('/^\/(index|get|static)\.php(\/)?/', $_SERVER["REQUEST_URI"])) {
-        return false;    // serve the requested resource as-is.
+        return false;    // serve the requested source as-is.
     }
 
     $path = pathinfo($_SERVER["SCRIPT_FILENAME"]);
@@ -104,7 +104,7 @@ if (php_sapi_name() === 'cli-server') {
             $debug('file does not exist');
             if (strpos($route, 'static/') === 0) {
                 $route = preg_replace('#static/#', '', $route, 1);
-                $_GET['resource'] = $route;
+                $_GET['source'] = $route;
                 $debug("static: $route");
                 include($magentoPackagePubDir.'/static.php');
                 exit;

@@ -25,14 +25,14 @@ class WebLogger implements LoggerInterface
     protected $logFile = 'install.log';
 
     /**
-     * Currently open file resource
+     * Currently open file source
      *
      * @var Filesystem
      */
     protected $filesystem;
 
     /**
-     * Currently open file resource
+     * Currently open file source
      *
      * @var \Magento\Framework\Filesystem\Directory\WriteInterface
      */

@@ -33,7 +33,7 @@ class RepositoryResource extends \Magento\Framework\Model\ResourceModel\Db\Abstr
      */
     public function load(\Magento\Framework\Model\AbstractModel $object, $value, $field = null)
     {
-        // forbid using resource model
+        // forbid using source model
     }
 
     /**

@@ -96,7 +96,7 @@ class Curl extends AbstractCurl implements RoleInterface
         $data['all'] = ($data['resource_access'] == 'All') ? 1 : 0;
         if (isset($data['roles_resources'])) {
             foreach ((array)$data['roles_resources'] as $resource) {
-                $data['resource'][] = $resource;
+                $data['source'][] = $resource;
             }
         }
 

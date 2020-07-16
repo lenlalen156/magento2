@@ -105,7 +105,7 @@ class ClassesTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Special case: collect resource helper references in PHP-code
+     * Special case: collect source helper references in PHP-code
      *
      * @param string $contents
      * @param array &$classes

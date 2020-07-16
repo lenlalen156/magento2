@@ -129,7 +129,7 @@ class StaticFilesTest extends \PHPUnit\Framework\TestCase
             }
             $this->assertNotEmpty(
                 $staticFile,
-                "The related resource cannot be resolved through fallback: '{$relatedResource}'"
+                "The related source cannot be resolved through fallback: '{$relatedResource}'"
             );
         }
     }
@@ -218,7 +218,7 @@ class StaticFilesTest extends \PHPUnit\Framework\TestCase
         $lessFile = $this->getStaticFile($area, $themePath, $locale, $lessPath, $module, true);
         $this->assertFalse(
             $cssFile && $lessFile,
-            "A resource file of only one type must exist. Both found: '$cssFile' and '$lessFile'"
+            "A source file of only one type must exist. Both found: '$cssFile' and '$lessFile'"
         );
     }
 

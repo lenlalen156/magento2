@@ -8279,7 +8279,7 @@
      * XMLHttpRequest object or JSONP and deals with browser incompatibilities.
      *
      * You should never need to use this service directly, instead use the higher-level abstractions:
-     * {@link ng.$http $http} or {@link ngResource.$resource $resource}.
+     * {@link ng.$http $http} or {@link ngResource.$source $source}.
      *
      * During testing this implementation is swapped with {@link ngMock.$httpBackend mock
  * $httpBackend} which can be trained with responses.
@@ -12831,7 +12831,7 @@
         HTML: 'html',
         CSS: 'css',
         URL: 'url',
-        // RESOURCE_URL is a subtype of URL used in contexts where a privileged resource is sourced from a
+        // RESOURCE_URL is a subtype of URL used in contexts where a privileged source is sourced from a
         // url.  (e.g. ng-include, script src, templateUrl)
         RESOURCE_URL: 'resourceUrl',
         JS: 'js'
@@ -12940,7 +12940,7 @@
      * <pre class="prettyprint">
      *    angular.module('myApp', []).config(function($sceDelegateProvider) {
  *      $sceDelegateProvider.resourceUrlWhitelist([
- *        // Allow same origin resource loads.
+ *        // Allow same origin source loads.
  *        'self',
  *        // Allow loading from our assets domain.  Notice the difference between * and **.
  *        'http://srv*.assets.example.com/**']);
@@ -12976,10 +12976,10 @@
          * @return {Array} the currently set whitelist array.
          *
          * The **default value** when no whitelist has been explicitly set is `['self']` allowing only
-         * same origin resource requests.
+         * same origin source requests.
          *
          * @description
-         * Sets/Gets the whitelist of trusted resource URLs.
+         * Sets/Gets the whitelist of trusted source URLs.
          */
         this.resourceUrlWhitelist = function (value) {
             if (arguments.length) {
@@ -13012,7 +13012,7 @@
          * is no blacklist.)
          *
          * @description
-         * Sets/Gets the blacklist of trusted resource URLs.
+         * Sets/Gets the blacklist of trusted source URLs.
          */
 
         this.resourceUrlBlacklist = function (value) {
@@ -13185,7 +13185,7 @@
                         return maybeTrusted;
                     } else {
                         throw $sceMinErr('insecurl',
-                            'Blocked loading resource from url not allowed by $sceDelegate policy.  URL: {0}',
+                            'Blocked loading source from url not allowed by $sceDelegate policy.  URL: {0}',
                             maybeTrusted.toString());
                     }
                 } else if (type === SCE_CONTEXTS.HTML) {

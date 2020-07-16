@@ -5,7 +5,7 @@
  */
 return [
     'TestIntegration1' => [
-        'resource' => [
+        'source' => [
             'Magento_Customer::manage',
             'Magento_Customer::online',
             'Magento_Sales::capture',
@@ -13,9 +13,9 @@ return [
         ],
     ],
     'TestIntegration2' => [
-        'resource' => ['Magento_Catalog::product_read', 'Magento_SalesRule::config_promo'],
+        'source' => ['Magento_Catalog::product_read', 'Magento_SalesRule::config_promo'],
     ],
     'TestIntegration3' => [
-        'resource' => ['Magento_Catalog::product_read', 'Magento_Sales::create', 'Magento_SalesRule::quote'],
+        'source' => ['Magento_Catalog::product_read', 'Magento_Sales::create', 'Magento_SalesRule::quote'],
     ]
 ];

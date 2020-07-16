@@ -7,7 +7,7 @@
 -->
 <integrations>
     <integration name="TestIntegration1">
-        <!-- List of API resources required by the integration. These are resource ids defined
+        <!-- List of API resources required by the integration. These are source ids defined
          in etc/acl.xml of modules and subsequently mapped to web APIs in webapi.xml. -->
         <resources>
             <resource name="Magento_Customer::manage" />

@@ -15,7 +15,7 @@ use Magento\UrlRewrite\Model\UrlFinderInterface;
 use Magento\UrlRewrite\Service\V1\Data\UrlRewrite;
 
 /**
- * Test for plugin which is listening store resource model and on save replace cms page url rewrites
+ * Test for plugin which is listening store source model and on save replace cms page url rewrites
  *
  * @magentoAppArea adminhtml
  */

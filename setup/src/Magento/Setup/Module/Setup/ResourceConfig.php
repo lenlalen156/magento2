@@ -6,7 +6,7 @@
 namespace Magento\Setup\Module\Setup;
 
 /**
- * Simplified resource config for Setup tools
+ * Simplified source config for Setup tools
  */
 class ResourceConfig implements \Magento\Framework\App\ResourceConnection\ConfigInterface
 {

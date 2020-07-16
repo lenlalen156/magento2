@@ -12340,7 +12340,7 @@
                  * @description
                  * Shortcut method to perform `GET` request.
                  *
-                 * @param {string|TrustedObject} url Absolute or relative URL of the resource that is being requested;
+                 * @param {string|TrustedObject} url Absolute or relative URL of the source that is being requested;
                  *                                   or an object created by a call to `$sce.trustAsResourceUrl(url)`.
                  * @param {Object=} config Optional configuration object. See https://docs.angularjs.org/api/ng/service/$http#usage
                  * @returns {HttpPromise} Future object
@@ -12353,7 +12353,7 @@
                  * @description
                  * Shortcut method to perform `DELETE` request.
                  *
-                 * @param {string|TrustedObject} url Absolute or relative URL of the resource that is being requested;
+                 * @param {string|TrustedObject} url Absolute or relative URL of the source that is being requested;
                  *                                   or an object created by a call to `$sce.trustAsResourceUrl(url)`.
                  * @param {Object=} config Optional configuration object. See https://docs.angularjs.org/api/ng/service/$http#usage
                  * @returns {HttpPromise} Future object
@@ -12366,7 +12366,7 @@
                  * @description
                  * Shortcut method to perform `HEAD` request.
                  *
-                 * @param {string|TrustedObject} url Absolute or relative URL of the resource that is being requested;
+                 * @param {string|TrustedObject} url Absolute or relative URL of the source that is being requested;
                  *                                   or an object created by a call to `$sce.trustAsResourceUrl(url)`.
                  * @param {Object=} config Optional configuration object. See https://docs.angularjs.org/api/ng/service/$http#usage
                  * @returns {HttpPromise} Future object
@@ -12380,7 +12380,7 @@
                  * Shortcut method to perform `JSONP` request.
                  *
                  * Note that, since JSONP requests are sensitive because the response is given full access to the browser,
-                 * the url must be declared, via {@link $sce} as a trusted resource URL.
+                 * the url must be declared, via {@link $sce} as a trusted source URL.
                  * You can trust a URL by adding it to the whitelist via
                  * {@link $sceDelegateProvider#resourceUrlWhitelist  `$sceDelegateProvider.resourceUrlWhitelist`} or
                  * by explicitly trusting the URL via {@link $sce#trustAsResourceUrl `$sce.trustAsResourceUrl(url)`}.
@@ -12408,7 +12408,7 @@
                  * If you would like to customise where and how the callbacks are stored then try overriding
                  * or decorating the {@link $jsonpCallbacks} service.
                  *
-                 * @param {string|TrustedObject} url Absolute or relative URL of the resource that is being requested;
+                 * @param {string|TrustedObject} url Absolute or relative URL of the source that is being requested;
                  *                                   or an object created by a call to `$sce.trustAsResourceUrl(url)`.
                  * @param {Object=} config Optional configuration object. See https://docs.angularjs.org/api/ng/service/$http#usage
                  * @returns {HttpPromise} Future object
@@ -12733,7 +12733,7 @@
      * XMLHttpRequest object or JSONP and deals with browser incompatibilities.
      *
      * You should never need to use this service directly, instead use the higher-level abstractions:
-     * {@link ng.$http $http} or {@link ngResource.$resource $resource}.
+     * {@link ng.$http $http} or {@link ngResource.$source $source}.
      *
      * During testing this implementation is swapped with {@link ngMock.$httpBackend mock
  * $httpBackend} which can be trained with responses.
@@ -19064,11 +19064,11 @@
         // Style statements or stylesheets. Currently unused in AngularJS.
         CSS: 'css',
 
-        // An URL used in a context where it does not refer to a resource that loads code. Currently
+        // An URL used in a context where it does not refer to a source that loads code. Currently
         // unused in AngularJS.
         URL: 'url',
 
-        // RESOURCE_URL is a subtype of URL used where the referred-to resource could be interpreted as
+        // RESOURCE_URL is a subtype of URL used where the referred-to source could be interpreted as
         // code. (e.g. ng-include, script src binding, templateUrl)
         RESOURCE_URL: 'resourceUrl',
 
@@ -19193,7 +19193,7 @@
      * ```
      *  angular.module('myApp', []).config(function($sceDelegateProvider) {
      *    $sceDelegateProvider.resourceUrlWhitelist([
-     *      // Allow same origin resource loads.
+     *      // Allow same origin source loads.
      *      'self',
      *      // Allow loading from our assets domain.  Notice the difference between * and **.
      *      'http://srv*.assets.example.com/**'
@@ -19205,7 +19205,7 @@
      *    ]);
      *  });
      * ```
-     * Note that an empty whitelist will block every resource URL from being loaded, and will require
+     * Note that an empty whitelist will block every source URL from being loaded, and will require
      * you to manually mark each one as trusted with `$sce.trustAsResourceUrl`. However, templates
      * requested by {@link ng.$templateRequest $templateRequest} that are present in
      * {@link ng.$templateCache $templateCache} will not go through this check. If you have a mechanism
@@ -19235,10 +19235,10 @@
          * @return {Array} The currently set whitelist array.
          *
          * @description
-         * Sets/Gets the whitelist of trusted resource URLs.
+         * Sets/Gets the whitelist of trusted source URLs.
          *
          * The **default value** when no whitelist has been explicitly set is `['self']` allowing only
-         * same origin resource requests.
+         * same origin source requests.
          *
          * <div class="alert alert-warning">
          * **Note:** the default whitelist of 'self' is not recommended if your app shares its origin
@@ -19271,7 +19271,7 @@
          * @return {Array} The currently set blacklist array.
          *
          * @description
-         * Sets/Gets the blacklist of trusted resource URLs.
+         * Sets/Gets the blacklist of trusted source URLs.
          *
          * The **default value** when no whitelist has been explicitly set is the empty array (i.e. there
          * is no blacklist.)
@@ -19464,7 +19464,7 @@
                         return maybeTrusted;
                     } else {
                         throw $sceMinErr('insecurl',
-                            'Blocked loading resource from url not allowed by $sceDelegate policy.  URL: {0}',
+                            'Blocked loading source from url not allowed by $sceDelegate policy.  URL: {0}',
                             maybeTrusted.toString());
                     }
                 } else if (type === SCE_CONTEXTS.HTML) {

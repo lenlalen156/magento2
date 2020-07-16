@@ -179,7 +179,7 @@ class FieldsProvider
     }
 
     /**
-     * Retrieve connection to resource specified by $resourceName.
+     * Retrieve connection to source specified by $resourceName.
      *
      * @param string $resourceName
      * @return \Exception|false|\Magento\Framework\DB\Adapter\AdapterInterface
