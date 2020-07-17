@@ -63,7 +63,7 @@ class ReviewReportEntityTest extends Injectable
     protected $pageCatalogProductView;
 
     /**
-     * Cms Index page.
+     * Cms index page.
      *
      * @var CmsIndex
      */

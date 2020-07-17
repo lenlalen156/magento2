@@ -31,14 +31,14 @@ class SearchTermsReportEntityTest extends Injectable
     /* end tags */
 
     /**
-     * Index page.
+     * index page.
      *
      * @var CmsIndex
      */
     protected $cmsIndex;
 
     /**
-     * Search Index page.
+     * Search index page.
      *
      * @var SearchIndex
      */

@@ -31,7 +31,7 @@ class CacheStatusOnScheduledIndexingTest extends Injectable
     /* end tags */
 
     /**
-     * Index Management page.
+     * index Management page.
      *
      * @var IndexManagement
      */

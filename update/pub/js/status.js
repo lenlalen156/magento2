@@ -20,7 +20,7 @@ angular.module('status', ['ngStorage'])
             $scope.rollbackStarted = true;
         };
         $scope.goToSuccessPage = function () {
-            window.location.href = '../setup/index.php#/updater-success';
+            window.location.href = '../setup/Index.php#/updater-success';
         };
 
         $interval(
@@ -60,7 +60,7 @@ angular.module('status', ['ngStorage'])
         );
         $interval(
             function () {
-                $http.post('../setup/index.php/session/prolong')
+                $http.post('../setup/Index.php/session/prolong')
                     .success(function (result) {
                     })
                     .error(function (result) {

@@ -37,14 +37,14 @@ class MassDeleteCustomerBackendEntityTest extends Injectable
     /* end tags */
 
     /**
-     * Customer Index page
+     * Customer index page
      *
      * @var CustomerIndex
      */
     protected $customerIndexPage;
 
     /**
-     * Customer Index Edit page
+     * Customer index Edit page
      *
      * @var CustomerIndexEdit
      */

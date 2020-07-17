@@ -48,7 +48,7 @@ class ExtensionGrid extends AbstractActionController
     }
 
     /**
-     * Index page action
+     * index page action
      *
      * @return \Zend\View\Model\ViewModel
      */

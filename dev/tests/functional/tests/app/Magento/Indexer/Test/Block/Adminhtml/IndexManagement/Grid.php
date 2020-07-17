@@ -10,7 +10,7 @@ use Magento\Mtf\Client\Locator;
 use Magento\Backend\Test\Block\Widget\Grid as WidgetGrid;
 
 /**
- * Grid in Index Management Page.
+ * Grid in index Management Page.
  */
 class Grid extends WidgetGrid
 {
@@ -49,7 +49,7 @@ class Grid extends WidgetGrid
     ];
 
     /**
-     * Update indexers action in Index Management Page.
+     * Update indexers action in index Management Page.
      *
      * @param array $indexers
      * @throws \Exception
@@ -70,7 +70,7 @@ class Grid extends WidgetGrid
     }
 
     /**
-     * Return indexers status in Index Management Page.
+     * Return indexers status in index Management Page.
      *
      * @param string $indexer
      * @return string|array

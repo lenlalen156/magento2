@@ -33,7 +33,7 @@ class DeleteSynonymGroupEntityTest extends Injectable
     /* end tags */
 
     /**
-     * Page Index.
+     * Page index.
      *
      * @var synonymGroupIndex
      */

@@ -26,7 +26,7 @@ class CreateProductWithAttributeSetStep implements TestStepInterface
     protected $fixtureFactory;
 
     /**
-     * Catalog Product Index page.
+     * Catalog Product index page.
      *
      * @var CatalogProductIndex
      */

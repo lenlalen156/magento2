@@ -41,6 +41,6 @@ class AssertUserSuccessSaveMessage extends AbstractConstraint
      */
     public function toString()
     {
-        return 'Success message on User Index page is correct.';
+        return 'Success message on User index page is correct.';
     }
 }

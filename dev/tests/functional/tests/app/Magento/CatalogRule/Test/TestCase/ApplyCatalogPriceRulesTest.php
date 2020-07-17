@@ -36,7 +36,7 @@ class ApplyCatalogPriceRulesTest extends AbstractCatalogRuleEntityTest
     /* end tags */
 
     /**
-     * Index number of promo product.
+     * index number of promo product.
      *
      * @var int
      */

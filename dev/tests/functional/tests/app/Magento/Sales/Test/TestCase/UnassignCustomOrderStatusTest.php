@@ -31,7 +31,7 @@ class UnassignCustomOrderStatusTest extends Injectable
     /* end tags */
 
     /**
-     * Order Status Index page.
+     * Order Status index page.
      *
      * @var OrderStatusIndex
      */

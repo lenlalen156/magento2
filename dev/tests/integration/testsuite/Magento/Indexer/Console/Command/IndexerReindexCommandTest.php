@@ -70,7 +70,7 @@ class IndexerReindexCommandTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals(
             \Magento\Framework\Console\Cli::RETURN_SUCCESS,
             $status,
-            'Index wasn\'t success'
+            'index wasn\'t success'
         );
 
         $notValidIndexers = [];

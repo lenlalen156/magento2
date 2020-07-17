@@ -452,11 +452,11 @@ define([
             expect($.validator.methods['validate-url']
                 .call($.validator.prototype, 'http://www.google.com')).toEqual(true);
             expect($.validator.methods['validate-url']
-                .call($.validator.prototype, 'http://127.0.0.1:8080/index.php')).toEqual(true);
+                .call($.validator.prototype, 'http://127.0.0.1:8080/Index.php')).toEqual(true);
             expect($.validator.methods['validate-url']
-                .call($.validator.prototype, 'http://app-spot.com/index.php')).toEqual(true);
+                .call($.validator.prototype, 'http://app-spot.com/Index.php')).toEqual(true);
             expect($.validator.methods['validate-url']
-                .call($.validator.prototype, 'http://app-spot_space.com/index.php')).toEqual(true);
+                .call($.validator.prototype, 'http://app-spot_space.com/Index.php')).toEqual(true);
         });
     });
 
@@ -473,7 +473,7 @@ define([
             expect($.validator.methods['validate-clean-url']
                 .call($.validator.prototype, 'http://www.google.com')).toEqual(true);
             expect($.validator.methods['validate-clean-url']
-                .call($.validator.prototype, 'http://127.0.0.1:8080/index.php')).toEqual(false);
+                .call($.validator.prototype, 'http://127.0.0.1:8080/Index.php')).toEqual(false);
             expect($.validator.methods['validate-clean-url']
                 .call($.validator.prototype, 'http://127.0.0.1:8080')).toEqual(false);
             expect($.validator.methods['validate-clean-url']

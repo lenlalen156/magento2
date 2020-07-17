@@ -37,7 +37,7 @@ class UpdateCustomOrderStatusTest extends Injectable
     /* end tags */
 
     /**
-     * Order Status Index page.
+     * Order Status index page.
      *
      * @var OrderStatusIndex
      */
@@ -51,7 +51,7 @@ class UpdateCustomOrderStatusTest extends Injectable
     protected $orderStatusEdit;
 
     /**
-     * Order Index page.
+     * Order index page.
      *
      * @var OrderIndex
      */

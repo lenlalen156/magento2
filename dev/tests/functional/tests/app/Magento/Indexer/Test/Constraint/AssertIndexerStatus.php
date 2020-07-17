@@ -10,12 +10,12 @@ use Magento\Indexer\Test\Page\Adminhtml\IndexManagement;
 use Magento\Mtf\Constraint\AbstractConstraint;
 
 /**
- * Assert Indexer status in Index Management Page.
+ * Assert Indexer status in index Management Page.
  */
 class AssertIndexerStatus extends AbstractConstraint
 {
     /**
-     * Indexer status in Index Management Page.
+     * Indexer status in index Management Page.
      *
      * @var array
      */

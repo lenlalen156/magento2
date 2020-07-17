@@ -31,7 +31,7 @@ class InstallExtensionGrid extends AbstractActionController
     }
 
     /**
-     * Index page action
+     * index page action
      *
      * @return ViewModel
      */

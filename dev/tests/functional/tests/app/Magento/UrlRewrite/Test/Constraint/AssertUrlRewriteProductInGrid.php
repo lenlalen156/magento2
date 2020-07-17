@@ -18,7 +18,7 @@ use Magento\UrlRewrite\Test\Page\Adminhtml\UrlRewriteIndex;
 class AssertUrlRewriteProductInGrid extends AbstractConstraint
 {
     /**
-     * Parent Category Index.
+     * Parent Category index.
      *
      * @var int
      */

@@ -37,7 +37,7 @@ class RevokeAllAccessTokensForAdminWithoutTokensTest extends Injectable
     /* end tags */
 
     /**
-     * User Index page.
+     * User index page.
      *
      * @var UserIndex
      */

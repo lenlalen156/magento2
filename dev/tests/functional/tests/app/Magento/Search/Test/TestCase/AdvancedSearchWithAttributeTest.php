@@ -29,7 +29,7 @@ use Magento\Catalog\Test\Fixture\Category;
 
 /**
  * Preconditions:
- * 1. Backend -> System -> New Index Management
+ * 1. Backend -> System -> New index Management
  * 2. Product EAV = Update by Schedule
  *      Cron is turned off.
  * 3. Perform full reindex: "bin/magento indexer:reindex".
@@ -104,7 +104,7 @@ class AdvancedSearchWithAttributeTest extends Injectable
     private $attributeDisable;
 
     /**
-     * Indexers in Index Management Page.
+     * Indexers in index Management Page.
      *
      * @var array
      */
@@ -118,7 +118,7 @@ class AdvancedSearchWithAttributeTest extends Injectable
     private $advancedSearch;
 
     /**
-     * Index Management Page.
+     * index Management Page.
      *
      * @var IndexManagement
      */
@@ -139,7 +139,7 @@ class AdvancedSearchWithAttributeTest extends Injectable
     private $resultPage;
 
     /**
-     * Catalog Product Index Page.
+     * Catalog Product index Page.
      *
      * @var ProductGrid
      */

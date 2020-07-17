@@ -10,7 +10,7 @@ use Magento\Backend\Test\Block\Widget\Grid as AbstractGrid;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Widget grid on the Widget Instance Index page.
+ * Widget grid on the Widget Instance index page.
  */
 class WidgetGrid extends AbstractGrid
 {

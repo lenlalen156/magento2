@@ -35,7 +35,7 @@ class UpdateCmsPageEntityTest extends Injectable
     /* end tags */
 
     /**
-     * CMS Index page.
+     * CMS index page.
      *
      * @var CmsPageIndex
      */

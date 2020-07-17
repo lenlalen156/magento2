@@ -18,7 +18,7 @@ use Magento\Mtf\TestStep\TestStepInterface;
 class AddAttributeToAttributeSetStep implements TestStepInterface
 {
     /**
-     * Catalog ProductSet Index page.
+     * Catalog ProductSet index page.
      *
      * @var CatalogProductSetIndex
      */
