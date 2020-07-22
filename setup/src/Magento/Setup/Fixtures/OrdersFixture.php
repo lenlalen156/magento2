@@ -116,7 +116,7 @@ class OrdersFixture extends Fixture
     private $queryTemplates;
 
     /**
-     * Array of source connections ordered by tables.
+     * Array of resource connections ordered by tables.
      *
      * @var \Magento\Framework\DB\Adapter\AdapterInterface[]
      */

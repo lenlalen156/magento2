@@ -33,7 +33,7 @@ class CreateSynonymGroupEntityTest extends Injectable
     /* end tags */
 
     /**
-     * Page index.
+     * Page Index.
      *
      * @var synonymGroupIndex
      */

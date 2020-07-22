@@ -56,7 +56,7 @@ class EditTest extends AbstractBackendController
     }
 
     /**
-     * Tests Edit action without reviews_all source when manipulating Pending review.
+     * Tests Edit action without reviews_all resource when manipulating Pending review.
      *
      * @return void
      * @magentoDataFixture Magento/Review/_files/reviews.php
@@ -68,7 +68,7 @@ class EditTest extends AbstractBackendController
         /** @var Review $review */
         $review = $collection->getItemByColumnValue('status_id', Review::STATUS_PENDING);
 
-        // Exclude source from ACL.
+        // Exclude resource from ACL.
         $this->aclBuilder->getAcl()->deny(null, 'Magento_Review::reviews_all');
         $this->uri = 'backend/review/product/edit/id/' . $review->getId();
 
@@ -82,7 +82,7 @@ class EditTest extends AbstractBackendController
      */
     public function testAclNoAccess(): void
     {
-        // Exclude source from ACL.
+        // Exclude resource from ACL.
         $this->resource = ['Magento_Review::reviews_all', 'Magento_Review::pending'];
         $this->uri = 'backend/review/product/edit/id/' . 'doesn\'t matter';
 

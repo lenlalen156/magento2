@@ -79,7 +79,7 @@ class CustomFlatAttributeTest extends IndexerTestCase
         self::assertInstanceOf(
             Flat::class,
             $resourceModel,
-            'Product should be received from flat source'
+            'Product should be received from flat resource'
         );
 
         self::assertEquals(

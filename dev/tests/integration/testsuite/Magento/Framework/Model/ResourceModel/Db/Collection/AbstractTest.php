@@ -18,7 +18,7 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
             ->get(\Magento\Framework\App\ResourceConnection::class);
         $context = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->create(
             \Magento\Framework\Model\ResourceModel\Db\Context::class,
-            ['source' => $resourceModel]
+            ['resource' => $resourceModel]
         );
 
         $resource = $this->getMockForAbstractClass(

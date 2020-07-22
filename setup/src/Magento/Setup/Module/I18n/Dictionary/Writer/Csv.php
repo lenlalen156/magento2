@@ -51,7 +51,7 @@ class Csv implements WriterInterface
     }
 
     /**
-     * Destructor for closing source
+     * Destructor for closing resource
      *
      * @return void
      */

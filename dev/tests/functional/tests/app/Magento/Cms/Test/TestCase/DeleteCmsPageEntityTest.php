@@ -33,7 +33,7 @@ class DeleteCmsPageEntityTest extends Injectable
     /* end tags */
 
     /**
-     * CMS index page.
+     * CMS Index page.
      *
      * @var CmsPageIndex
      */

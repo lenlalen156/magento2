@@ -11,7 +11,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Provide tests for Cms Page source model.
+ * Provide tests for Cms Page resource model.
  */
 class PageTest extends TestCase
 {

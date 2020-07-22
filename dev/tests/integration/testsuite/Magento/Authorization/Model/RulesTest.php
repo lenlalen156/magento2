@@ -89,7 +89,7 @@ class RulesTest extends \PHPUnit\Framework\TestCase
             $this->assertEquals(
                 'allow',
                 $rule['permission'],
-                "Permission for '{$rule['resource_id']}' source should be 'allow'"
+                "Permission for '{$rule['resource_id']}' resource should be 'allow'"
             );
         }
         $this->assertEquals($expectedDefaultPermissions, $actualPermissions, 'Default permissions are invalid');

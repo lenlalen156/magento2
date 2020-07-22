@@ -30,7 +30,7 @@ class ModuleGrid extends \Zend\Mvc\Controller\AbstractActionController
     }
 
     /**
-     * index page action
+     * Index page action
      *
      * @return \Zend\View\Model\ViewModel
      */

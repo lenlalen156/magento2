@@ -34,7 +34,7 @@ class AssertAddedProductAttributeOnProductForm extends AbstractConstraint
     protected $fixtureFactory;
 
     /**
-     * Catalog Product index page.
+     * Catalog Product Index page.
      *
      * @var CatalogProductIndex
      */

@@ -130,7 +130,7 @@ class AuthorizationServiceTest extends \PHPUnit\Framework\TestCase
         foreach ($resources as $resource) {
             $this->assertTrue(
                 $this->libAuthorization->isAllowed($resource),
-                "Access to source '{$resource}' is prohibited while it is expected to be granted."
+                "Access to resource '{$resource}' is prohibited while it is expected to be granted."
             );
         }
     }
@@ -150,7 +150,7 @@ class AuthorizationServiceTest extends \PHPUnit\Framework\TestCase
         foreach ($resources as $resource) {
             $this->assertFalse(
                 $this->libAuthorization->isAllowed($resource),
-                "Access to source '{$resource}' is expected to be prohibited."
+                "Access to resource '{$resource}' is expected to be prohibited."
             );
         }
     }

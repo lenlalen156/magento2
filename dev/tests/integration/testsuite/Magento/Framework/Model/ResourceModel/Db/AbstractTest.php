@@ -20,7 +20,7 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
         );
         $context = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->create(
             \Magento\Framework\Model\ResourceModel\Db\Context::class,
-            ['source' => $resource]
+            ['resource' => $resource]
         );
         $this->_model = $this->getMockForAbstractClass(
             \Magento\Framework\Model\ResourceModel\Db\AbstractDb::class,
@@ -64,7 +64,7 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
         );
         $context = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->create(
             \Magento\Framework\Model\ResourceModel\Db\Context::class,
-            ['source' => $resource]
+            ['resource' => $resource]
         );
 
         $model = $this->getMockForAbstractClass(

@@ -136,7 +136,7 @@ class Soap implements \Magento\TestFramework\TestCase\Webapi\AdapterInterface
     public function generateWsdlUrl($services, $storeCode = null)
     {
         /** Sort list of services to avoid having different WSDL URLs for the identical lists of services. */
-        //TODO: This may change since same source of multiple versions may be allowed after namespace changes
+        //TODO: This may change since same resource of multiple versions may be allowed after namespace changes
         ksort($services);
         if ($storeCode == null) {
             $storeCode = Bootstrap::getObjectManager()

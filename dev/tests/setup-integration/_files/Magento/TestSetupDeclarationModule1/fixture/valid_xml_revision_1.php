@@ -97,7 +97,7 @@ return [
                 ],
             ],
             'name' => 'reference_table',
-            'source' => 'default',
+            'resource' => 'default',
         ],
         'auto_increment_test' => [
             'column' => [
@@ -129,7 +129,7 @@ return [
                 ],
             ],
             'name' => 'auto_increment_test',
-            'source' => 'default',
+            'resource' => 'default',
         ],
         'test_table' => [
             'column' => [
@@ -254,7 +254,7 @@ return [
                 ],
             ],
             'name' => 'test_table',
-            'source' => 'default',
+            'resource' => 'default',
         ],
     ],
 ];

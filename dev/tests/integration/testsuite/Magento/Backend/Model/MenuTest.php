@@ -45,7 +45,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
                     'id' => 'Magento_Backend::system2',
                     'title' => 'Extended System',
                     'module' => 'Magento_Backend',
-                    'source' => 'Magento_Backend::system2',
+                    'resource' => 'Magento_Backend::system2',
                 ]
             )
         );
@@ -58,7 +58,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
                     'title' => 'Acl',
                     'module' => 'Magento_Backend',
                     'action' => 'admin/backend/acl/index',
-                    'source' => 'Magento_Backend::system2_acl',
+                    'resource' => 'Magento_Backend::system2_acl',
                 ]
             ),
             'Magento_Backend::system2'
@@ -95,7 +95,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
                     'id' => 'Magento_Backend::system3',
                     'title' => 'Extended System',
                     'module' => 'Magento_Backend',
-                    'source' => 'Magento_Backend::system3',
+                    'resource' => 'Magento_Backend::system3',
                     'dependsOnConfig' => 'dev/test/system',
                 ]
             )
@@ -109,7 +109,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
                     'title' => 'Acl',
                     'module' => 'Magento_Backend',
                     'action' => 'admin/backend/acl/index',
-                    'source' => 'Magento_Backend::system3_acl',
+                    'resource' => 'Magento_Backend::system3_acl',
                 ]
             ),
             'Magento_Backend::system3'
@@ -117,10 +117,10 @@ class MenuTest extends \PHPUnit\Framework\TestCase
         $serializedString = $menu->serialize();
         $expected = '[{"parent_id":null,"module":"Magento_Backend","sort_index":null,'
             . '"dependsOnConfig":"dev\/test\/system",'
-            . '"id":"Magento_Backend::system3","source":"Magento_Backend::system3","path":"","action":null,'
+            . '"id":"Magento_Backend::system3","resource":"Magento_Backend::system3","path":"","action":null,'
             . '"dependsOnModule":null,"toolTip":null,"title":"Extended System",'
             . '"target":null,"sub_menu":[{"parent_id":null,"module":"Magento_Backend","sort_index":null,'
-            . '"dependsOnConfig":null,"id":"Magento_Backend::system3_acl","source":"Magento_Backend::system3_acl",'
+            . '"dependsOnConfig":null,"id":"Magento_Backend::system3_acl","resource":"Magento_Backend::system3_acl",'
             . '"path":"","action":"admin\/backend\/acl\/index","dependsOnModule":null,"toolTip":null,"title":"Acl",'
             . '"target":null,"sub_menu":null}]}]';
         $this->assertEquals($expected, $serializedString);
@@ -132,10 +132,10 @@ class MenuTest extends \PHPUnit\Framework\TestCase
     public function testUnserialize()
     {
         $serializedMenu = '[{"parent_id":null,"module":"Magento_Backend","sort_index":null,'
-            . '"dependsOnConfig":"dev\/test","id":"Magento_Backend::system3","source":"Magento_Backend::system3",'
+            . '"dependsOnConfig":"dev\/test","id":"Magento_Backend::system3","resource":"Magento_Backend::system3",'
             . '"path":"","action":null,"dependsOnModule":null,"toolTip":null,"title":"Extended System",'
             . '"target":null,"sub_menu":[{"parent_id":null,"module":"Magento_Backend","sort_index":null,'
-            . '"dependsOnConfig":null,"id":"Magento_Backend::system3_acl","source":"Magento_Backend::system3_acl",'
+            . '"dependsOnConfig":null,"id":"Magento_Backend::system3_acl","resource":"Magento_Backend::system3_acl",'
             . '"path":"","action":"admin\/backend\/acl\/index","dependsOnModule":null,"toolTip":null,"title":"Acl",'
             . '"target":null,"sub_menu":null}]}]';
         /** @var Menu $menu */
@@ -148,7 +148,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
                 'sort_index' => null,
                 'dependsOnConfig' => 'dev/test',
                 'id' => 'Magento_Backend::system3',
-                'source' => 'Magento_Backend::system3',
+                'resource' => 'Magento_Backend::system3',
                 'path' => '',
                 'action' => null,
                 'dependsOnModule' => null,
@@ -163,7 +163,7 @@ class MenuTest extends \PHPUnit\Framework\TestCase
                             'sort_index' => null,
                             'dependsOnConfig' => null,
                             'id' => 'Magento_Backend::system3_acl',
-                            'source' => 'Magento_Backend::system3_acl',
+                            'resource' => 'Magento_Backend::system3_acl',
                             'path' => '',
                             'action' => 'admin/backend/acl/index',
                             'dependsOnModule' => null,

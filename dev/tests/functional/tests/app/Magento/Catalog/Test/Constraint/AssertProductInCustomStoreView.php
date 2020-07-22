@@ -33,7 +33,7 @@ class AssertProductInCustomStoreView extends AbstractAssertForm
     private $browser;
 
     /**
-     * Cms index page.
+     * Cms Index page.
      *
      * @var CmsIndex
      */

@@ -93,7 +93,7 @@ class Install extends AbstractActionController
     }
 
     /**
-     * index Action
+     * Index Action
      *
      * @return JsonModel
      */

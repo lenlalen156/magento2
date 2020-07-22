@@ -3,12 +3,6 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/pa
 ge_configuration.xsd">
     <body>
-        <referenceBlock name="logo">
-            <action method="setLogoFile">
-                <argument name="logo_file"
-                          xsi:type="string">images/logo.png</argument>
-            </action>
-        </referenceBlock>
         <referenceBlock name="footer">
             <block class="Magento\Framework\View\Element\Html\Links"
                    name="footer_links_account" after="footer_links">
@@ -36,6 +30,7 @@ ge_configuration.xsd">
                 </block>
             </block>
         </referenceBlock>
+
     </body>
 </page>
 

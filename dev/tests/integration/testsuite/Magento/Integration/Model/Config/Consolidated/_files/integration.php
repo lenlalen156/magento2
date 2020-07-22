@@ -8,7 +8,7 @@ return [
         'email' => 'test-integration1@example.com',
         'endpoint_url' => 'http://example.com/endpoint1',
         'identity_link_url' => 'http://www.example.com/identity1',
-        'source' => [
+        'resource' => [
             'Magento_Backend::admin',
             'Magento_Customer::customer',
             'Magento_Customer::manage',
@@ -26,7 +26,7 @@ return [
         'email' => 'test-integration2@example.com',
         'endpoint_url' => 'http://example.com/integration2',
         'identity_link_url' => 'http://www.example.com/identity2',
-        'source' => [
+        'resource' => [
             'Magento_Backend::admin',
             'Magento_Sales::sales',
             'Magento_Sales::sales_operation',
@@ -41,7 +41,7 @@ return [
     ],
     'TestIntegration3' => [
         'email' => 'test-integration3@example.com',
-        'source' => [
+        'resource' => [
             'Magento_Backend::admin',
             'Magento_Sales::sales',
             'Magento_Sales::sales_operation',

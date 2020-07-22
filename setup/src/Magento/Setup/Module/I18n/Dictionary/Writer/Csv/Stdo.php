@@ -23,7 +23,7 @@ class Stdo extends Csv
     }
 
     /**
-     * Overriding parent as we can not close globally used source
+     * Overriding parent as we can not close globally used resource
      *
      * @return void
      */

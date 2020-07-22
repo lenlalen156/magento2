@@ -58,7 +58,7 @@ class WebsiteCategoryProvider
     /**
      * Get websites for $productIndex product
      *
-     * @param int $productIndex index of generated product
+     * @param int $productIndex Index of generated product
      * @return array
      * @throws \Exception
      */

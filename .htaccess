@@ -176,7 +176,7 @@
     RewriteCond %{REQUEST_FILENAME} !-l
 
 ############################################
-## rewrite everything else to Index.php
+## rewrite everything else to index.php
 
     RewriteRule .* index.php [L]
 

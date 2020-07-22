@@ -36,10 +36,10 @@ class CurlClientWithCookies
     }
 
     /**
-     * Compose the source url
+     * Compose the resource url
      *
      * @param string $resourcePath Resource URL like /V1/Resource1/123
-     * @return string source URL
+     * @return string resource URL
      * @throws \Exception
      */
     public function constructResourceUrl($resourcePath)

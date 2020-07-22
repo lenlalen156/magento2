@@ -12,12 +12,12 @@ use Magento\Backend\App\AbstractAction;
 class ControllerAclTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * Default function for checking accessibility of the ACL source.
+     * Default function for checking accessibility of the ACL resource.
      */
     const ACL_FUNC_NAME = '_isAllowed';
 
     /**
-     * Name of the const. that contains ACL source path.
+     * Name of the const. that contains ACL resource path.
      */
     const ACL_CONST_NAME = 'ADMIN_RESOURCE';
 
@@ -152,7 +152,7 @@ class ControllerAclTest extends \PHPUnit\Framework\TestCase
         $xmlResources = [];
         array_map(function ($file) use (&$xmlResources) {
             $config = simplexml_load_file($file[0]);
-            $nodes = $config->xpath('.//source/@id') ?: [];
+            $nodes = $config->xpath('.//resource/@id') ?: [];
             foreach ($nodes as $node) {
                 $xmlResources[(string)$node] = $node;
             }

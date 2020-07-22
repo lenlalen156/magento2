@@ -145,7 +145,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
                 'scopeResolver' => $scopeResolver,
                 'fileSource' => $fileSource,
                 'pageLayoutFileSource' => $pageLayoutFileSource,
-                'source' => $this->_resource,
+                'resource' => $this->_resource,
                 'appState' => $this->_appState,
                 'cache' => $this->_cache,
                 'serializer' => $this->_serializer,

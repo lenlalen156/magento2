@@ -370,7 +370,7 @@ class CategoryUrlRewriteTest extends AbstractUrlRewriteTest
     }
 
     /**
-     * Save product with data using source model directly
+     * Save product with data using resource model directly
      *
      * @param array $data
      * @param CategoryInterface|null $category

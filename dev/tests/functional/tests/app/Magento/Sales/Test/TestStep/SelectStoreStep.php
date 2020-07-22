@@ -24,7 +24,7 @@ class SelectStoreStep implements TestStepInterface
     protected $store;
 
     /**
-     * Order Create index page
+     * Order Create Index page
      *
      * @var OrderCreateIndex
      */

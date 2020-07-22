@@ -76,7 +76,7 @@ class CreateCatalogRulesIndexerTest extends Injectable
     private $catalogRuleNew;
 
     /**
-     * index management page.
+     * Index management page.
      *
      * @var IndexManagement
      */

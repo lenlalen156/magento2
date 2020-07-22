@@ -423,7 +423,7 @@ class DeclarativeInstallerTest extends SetupTestCase
         $this->assertNotRegExp(
             '/KEY\s+`TEST_TABLE_VARCHAR`\s+\(`varchar`\)/',
             $tableSql,
-            'index is not being disabled by external module'
+            'Index is not being disabled by external module'
         );
     }
 

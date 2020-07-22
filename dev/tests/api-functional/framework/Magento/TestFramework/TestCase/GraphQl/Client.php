@@ -193,7 +193,7 @@ class Client
     /**
      * Get endpoint url
      *
-     * @return string source URL
+     * @return string resource URL
      * @throws \Exception
      */
     public function getEndpointUrl()

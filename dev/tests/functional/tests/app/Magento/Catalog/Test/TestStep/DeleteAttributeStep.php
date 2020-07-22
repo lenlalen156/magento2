@@ -17,7 +17,7 @@ use Magento\Mtf\TestStep\TestStepInterface;
 class DeleteAttributeStep implements TestStepInterface
 {
     /**
-     * Catalog Product Attribute index page.
+     * Catalog Product Attribute Index page.
      *
      * @var CatalogProductAttributeIndex
      */

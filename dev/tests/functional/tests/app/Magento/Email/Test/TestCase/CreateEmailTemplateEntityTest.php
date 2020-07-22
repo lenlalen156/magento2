@@ -35,7 +35,7 @@ class CreateEmailTemplateEntityTest extends Injectable
     /* end tags */
 
     /**
-     * Email Template index page.
+     * Email Template Index page.
      *
      * @var EmailTemplateIndex
      */

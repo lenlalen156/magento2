@@ -34,7 +34,7 @@ class UpdateSynonymGroupEntityTest extends Injectable
     /* end tags */
 
     /**
-     * Page index.
+     * Page Index.
      *
      * @var synonymGroupIndex
      */

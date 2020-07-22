@@ -45,7 +45,7 @@ class ChangelogTest extends \PHPUnit\Framework\TestCase
 
         $this->model = $this->objectManager->create(
             \Magento\Framework\Mview\View\Changelog::class,
-            ['source' => $this->resource]
+            ['resource' => $this->resource]
         );
         $this->model->setViewId('test_view_id_1');
         $this->model->create();
@@ -69,7 +69,7 @@ class ChangelogTest extends \PHPUnit\Framework\TestCase
         /** @var \Magento\Framework\Mview\View\Changelog $model */
         $model = $this->objectManager->create(
             \Magento\Framework\Mview\View\Changelog::class,
-            ['source' => $this->resource]
+            ['resource' => $this->resource]
         );
         $model->setViewId('test_view_id_2');
         $changelogName = $this->resource->getTableName($model->getName());
@@ -89,7 +89,7 @@ class ChangelogTest extends \PHPUnit\Framework\TestCase
     {
         $model = $this->objectManager->create(
             \Magento\Framework\Mview\View\Changelog::class,
-            ['source' => $this->resource]
+            ['resource' => $this->resource]
         );
         $model->setViewId('test_view_id_2');
         $model->create();

@@ -19,7 +19,7 @@ use Magento\Setup\Test\Constraint\AssertApplicationVersion;
 class UpgradeSystemTest extends Injectable
 {
     /**
-     * Page System Upgrade index.
+     * Page System Upgrade Index.
      *
      * @var SetupWizard
      */

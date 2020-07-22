@@ -17,7 +17,7 @@ return [
                 ],
             ],
             'name' => 'reference_table',
-            'source' => 'default',
+            'resource' => 'default',
         ],
         'test_table' => [
             'column' => [
@@ -41,7 +41,7 @@ return [
                 ],
             ],
             'name' => 'test_table',
-            'source' => 'default',
+            'resource' => 'default',
         ],
     ],
 ];

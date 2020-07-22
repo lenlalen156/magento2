@@ -10,12 +10,12 @@ use Magento\Catalog\Test\Page\Adminhtml\CatalogProductAttributeIndex;
 use Magento\Mtf\TestStep\TestStepInterface;
 
 /**
- * Open Product Attribute index Page.
+ * Open Product Attribute Index Page.
  */
 class OpenProductAttributesPageStep implements TestStepInterface
 {
     /**
-     * Catalog Product Attribute index page.
+     * Catalog Product Attribute Index page.
      *
      * @var CatalogProductAttributeIndex
      */
@@ -31,7 +31,7 @@ class OpenProductAttributesPageStep implements TestStepInterface
     }
 
     /**
-     * Open Catalog Product Attribute index.
+     * Open Catalog Product Attribute Index.
      *
      * @return void
      */

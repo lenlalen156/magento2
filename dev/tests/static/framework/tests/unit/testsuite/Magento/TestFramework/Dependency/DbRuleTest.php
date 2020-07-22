@@ -32,7 +32,7 @@ class DbRuleTest extends \PHPUnit\Framework\TestCase
     public function getDependencyInfoDataProvider()
     {
         return [
-            ['any', 'non-source-file-path.php', 'any', []],
+            ['any', 'non-resource-file-path.php', 'any', []],
             [
                 'any',
                 '/app/some/path/Setup/some-file.php',

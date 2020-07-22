@@ -57,7 +57,7 @@ class CustomerPaymentTokensTest extends GraphQlAbstract
         $collection->addFieldToFilter('customer_id', ['eq' => 1]);
 
         foreach ($collection->getItems() as $token) {
-            // Using the source directly to delete. Deleting from the repository only makes token inactive
+            // Using the resource directly to delete. Deleting from the repository only makes token inactive
             $this->tokenResource->delete($token);
         }
     }

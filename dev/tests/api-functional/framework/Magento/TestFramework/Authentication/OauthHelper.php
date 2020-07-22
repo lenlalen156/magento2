@@ -183,7 +183,7 @@ class OauthHelper
         if ($resources === null || $resources == 'all') {
             $params['all_resources'] = true;
         } else {
-            $params['source'] = $resources;
+            $params['resource'] = $resources;
         }
         $integration = $integrationService->create($params);
         $integration->setStatus(\Magento\Integration\Model\Integration::STATUS_ACTIVE)->save();

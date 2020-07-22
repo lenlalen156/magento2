@@ -19,7 +19,7 @@ return [
         'table_prefix' => '',
         'connection' => [],
     ],
-    'source' => [],
+    'resource' => [],
     'x-frame-options' => 'SAMEORIGIN',
     'MAGE_MODE' => 'default',
     'cache_types' => [

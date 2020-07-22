@@ -23,7 +23,7 @@ use Magento\Setup\Test\Constraint\AssertSuccessfulReadinessCheck;
 abstract class AbstractExtensionTest extends Injectable
 {
     /**
-     * Page System Upgrade index.
+     * Page System Upgrade Index.
      *
      * @var SetupWizard
      */

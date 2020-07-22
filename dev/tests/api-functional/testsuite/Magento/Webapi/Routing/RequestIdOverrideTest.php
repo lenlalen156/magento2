@@ -85,7 +85,7 @@ class RequestIdOverrideTest extends \Magento\Webapi\Routing\BaseService
         $this->assertEquals(
             $secondItemId,
             $item[\Magento\TestModule5\Service\V1\Entity\AllSoapAndRest::ID],
-            'Identifier overriding failed for nested source request.'
+            'Identifier overriding failed for nested resource request.'
         );
     }
 

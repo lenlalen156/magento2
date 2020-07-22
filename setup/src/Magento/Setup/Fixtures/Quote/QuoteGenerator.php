@@ -31,7 +31,7 @@ class QuoteGenerator
     private $queryTemplates;
 
     /**
-     * Array of source connections ordered by tables.
+     * Array of resource connections ordered by tables.
      *
      * @var \Magento\Framework\DB\Adapter\AdapterInterface[]
      */
@@ -792,7 +792,7 @@ class QuoteGenerator
     }
 
     /**
-     * Get connection to database for specified source.
+     * Get connection to database for specified resource.
      *
      * @param string $resourceName
      * @return \Magento\Framework\DB\Adapter\AdapterInterface

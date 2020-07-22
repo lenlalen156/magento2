@@ -35,7 +35,7 @@ abstract class AbstractIntegrity extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Checks source file declaration - whether it is for disabled module (e.g. 'Disabled_Module::file.ext').
+     * Checks resource file declaration - whether it is for disabled module (e.g. 'Disabled_Module::file.ext').
      *
      * @param string $file
      * @return bool

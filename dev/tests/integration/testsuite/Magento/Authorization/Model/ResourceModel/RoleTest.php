@@ -6,7 +6,7 @@
 namespace Magento\Authorization\Model\ResourceModel;
 
 /**
- * Role source test
+ * Role resource test
  *
  * @magentoAppArea adminhtml
  */

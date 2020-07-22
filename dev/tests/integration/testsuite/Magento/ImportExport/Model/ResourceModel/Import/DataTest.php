@@ -6,7 +6,7 @@
 namespace Magento\ImportExport\Model\ResourceModel\Import;
 
 /**
- * Test Import Data source model
+ * Test Import Data resource model
  *
  * @magentoDataFixture Magento/ImportExport/_files/import_data.php
  */

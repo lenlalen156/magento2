@@ -40,7 +40,7 @@ class AssignCustomOrderStatusTest extends Injectable
     /* end tags */
 
     /**
-     * Order Status index page.
+     * Order Status Index page.
      *
      * @var OrderStatusIndex
      */
@@ -54,7 +54,7 @@ class AssignCustomOrderStatusTest extends Injectable
     protected $orderStatusAssign;
 
     /**
-     * Order index page.
+     * Order Index page.
      *
      * @var OrderIndex
      */

@@ -20,7 +20,7 @@ use Magento\Framework\Exception\InputException;
 use Magento\Framework\Exception\StateException;
 
 /**
- * Tests product source model
+ * Tests product resource model
  *
  * @see \Magento\Catalog\Model\ResourceModel\Product
  * @see \Magento\Catalog\Model\ResourceModel\AbstractResource

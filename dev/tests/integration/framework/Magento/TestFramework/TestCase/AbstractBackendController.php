@@ -23,7 +23,7 @@ abstract class AbstractBackendController extends \Magento\TestFramework\TestCase
     protected $_auth;
 
     /**
-     * The source used to authorize action
+     * The resource used to authorize action
      *
      * @var string
      */

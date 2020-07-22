@@ -96,7 +96,7 @@ class CreateOrderFromEditCustomerPageTest extends Injectable
     protected $store;
 
     /**
-     * Order Create index page.
+     * Order Create Index page.
      *
      * @var OrderCreateIndex
      */
