@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/pa
+ge_configuration.xsd">
+    <body>
+        <referenceBlock name="footer_links">
+            <block
+                    class="Magento\Framework\View\Element\Html\Link\Current"
+                    name="newworld-link">
+                <arguments>
+                    <argument name="label" translate="true"
+                              xsi:type="string">Newworld landing</argument>
+                    <argument name="path"
+                              xsi:type="string">Newworld/index/index</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
