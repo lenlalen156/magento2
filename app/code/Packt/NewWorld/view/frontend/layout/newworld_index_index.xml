@@ -11,6 +11,8 @@ ge_configuration.xsd">
         <referenceContainer name="content">
             <block class="Packt\NewWorld\Block\Landingspage"
                    name="landingsblock" template="Packt_NewWorld::landingspage.phtml" />
+            <block class="Packt\NewWorld\Block\Newproducts" name="new_products"
+                   template="Packt_NewWorld::newproducts.phtml"/>
         </referenceContainer>
     </body>
 </page>
