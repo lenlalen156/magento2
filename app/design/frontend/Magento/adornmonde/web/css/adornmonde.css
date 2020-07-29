@@ -1,0 +1,18 @@
+.page-header ul{
+    float: unset;
+    width: 100%;
+    text-align: center;
+}
+.logo{
+    float: unset;
+    width: 100%;
+    max-width: 100%;
+}
+
+.logo img {
+    margin: auto;
+    width: 330px;
+    margin-bottom: -20px;
+    margin-top: -10px;
+
+}
