@@ -4,15 +4,47 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/pa
 ge_configuration.xsd">
     <head>
-        <title>Newworld Landingspage</title>
+        <title></title>
     </head>
     <body>
         <remove name="wishlist_sidebar" />
-        <referenceContainer name="content">
-            <block class="Packt\NewWorld\Block\Landingspage"
-                   name="landingsblock" template="Packt_NewWorld::landingspage.phtml" />
-            <block class="Packt\NewWorld\Block\Newproducts" name="new_products"
-                   template="Packt_NewWorld::newproducts.phtml"/>
+        <referenceContainer name="header.container">
+            <move element="store_language" destination="header.container" />
         </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Packt\NewWorld\Block\Display" name="newworld_display" template="Packt_NewWorld::sayhello.phtml" />
+        </referenceContainer>
+
+
+        <referenceBlock name="footer">
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_column_1">
+                <block class="Packt\NewWorld\Block\Display" name="newworld_display" template="Packt_NewWorld::footercolumn1.phtml" />
+
+
+
+
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer  links</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="myaccount-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">My  account</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="my-cartlink">
+                    <arguments>
+                        <argument name="label" xsi:type="string">My cart</argument>
+                        <argument name="path" xsi:type="string">checkout/cart</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceBlock>
+
+
+
+
+
+
     </body>
 </page>

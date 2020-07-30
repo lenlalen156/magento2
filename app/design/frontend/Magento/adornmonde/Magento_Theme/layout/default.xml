@@ -10,44 +10,6 @@ ge_configuration.xsd">
         </referenceBlock>
 
 
-        <referenceBlock name="block">
-
-        </referenceBlock>
-
-
-        <referenceBlock name="footer">
-            <block class="Magento\Framework\View\Element\Html\Links"
-                   name="footer_links_account" after="footer_links">
-                <arguments>
-                    <argument name="css_class" xsi:type="string">footer
-                        links</argument>
-                </arguments>
-                <block
-                        class="Magento\Framework\View\Element\Html\Link\Current" name="myaccount-link">
-                    <arguments>
-                        <argument name="label" xsi:type="string">My
-                            account</argument>
-                        <argument name="path"
-                                  xsi:type="string">customer/account</argument>
-                    </arguments>
-                </block>
-                <block
-                        class="Magento\Framework\View\Element\Html\Link\Current" name="my-cartlink">
-                    <arguments>
-                        <argument name="label" xsi:type="string">My
-                            cart</argument>
-                        <argument name="path"
-                                  xsi:type="string">checkout/cart</argument>
-                    </arguments>
-                </block>
-            </block>
-        </referenceBlock>
-
-        <referenceBlock name="register-link" remove="true" />           <!--for Create Account Link-->
-        <referenceBlock name="authorization-link" remove="true" />      <!--for Sign In Link  -->
-        <referenceBlock name="wish-list-link" remove="true" />          <!--for WishList Link-->
-        <referenceBlock name="my-account-link" remove="true" />         <!--for My Account Link-->
-
     </body>
 </page>
 
