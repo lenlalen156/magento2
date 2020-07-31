@@ -208,7 +208,7 @@ class InitParamListener implements ListenerAggregateInterface, FactoryInterface
     }
 
     /**
-     * Collects init params configuration from multiple sources
+     * Collects init params configuration from multiple source
      *
      * Each next step overwrites previous, whenever data is available, in the following order:
      * 1: ZF application config

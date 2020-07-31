@@ -10,6 +10,74 @@ ge_configuration.xsd">
         </referenceBlock>
 
 
+        <referenceBlock name="register-link" remove="true" />
+        <referenceBlock name="authorization-link" remove="true" />
+        <referenceBlock name="wish-list-link" remove="true" />
+        <referenceBlock name="my-account-link" remove="true" />
+
+
+        <referenceBlock name="store_switcher" remove="true" />
+        <referenceContainer name="div.sidebar.additional" remove="true"/>
+
+        <move element="store_language" as="store_language" destination="header-wrapper" before="logo" />
+        <move element="store.settings.currency" as="store.settings.currency" destination="header-wrapper" after="store_language" />
+
+
+
+
+
+
+        <referenceBlock name="footer">
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links_new">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="block_xample">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Block Label</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceBlock>
+
+        <referenceBlock name="footer">
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_account" before="-">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links account</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="footer_account-title">
+                    <arguments>
+                        <argument name="label" xsi:type="string">ACCOUNT</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="sign-in-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Sign in</argument>
+                        <argument name="path" xsi:type="string">customer/account/login</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="return-order-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Return your oder</argument>
+                        <argument name="path" xsi:type="string">return-order</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="order-lookup-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Order lookup</argument>
+                        <argument name="path" xsi:type="string">order-lookup</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceBlock>
+
+
+
+
+
+
+
+
     </body>
 </page>
 

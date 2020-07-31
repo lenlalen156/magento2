@@ -3,20 +3,43 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/pa
 ge_configuration.xsd">
     <body>
-        <referenceBlock name="register-link" remove="true" />
-        <referenceBlock name="authorization-link" remove="true" />
-        <referenceBlock name="wish-list-link" remove="true" />
-        <referenceBlock name="my-account-link" remove="true" />
-        <!--<referenceBlock name="navigation.sections" remove="true" />-->
-        <referenceBlock name="footer_links" remove="true" />
-        <referenceBlock name="copyright" remove="true" />
-        <referenceBlock name="report.bugs" remove="true" />
-        <referenceBlock name="store_switcher" remove="true" />
-        <referenceContainer name="div.sidebar.additional" remove="true"/>
+        <!--<referenceBlock name="register-link" remove="true" />-->
+        <!--<referenceBlock name="authorization-link" remove="true" />-->
+        <!--<referenceBlock name="wish-list-link" remove="true" />-->
+        <!--<referenceBlock name="my-account-link" remove="true" />-->
+
+
+        <!--<referenceBlock name="store_switcher" remove="true" />-->
+        <!--<referenceContainer name="div.sidebar.additional" remove="true"/>-->
+
+
+        <!--&lt;!&ndash;<referenceContainer name="header.container">&ndash;&gt;-->
+            <!--&lt;!&ndash;<referenceContainer name="header-wrapper">&ndash;&gt;-->
+                <!--&lt;!&ndash;<move element="store_language" destination="header.container" />&ndash;&gt;-->
+                <!--&lt;!&ndash;<move element="store.settings.currency" destination="page.top" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</referenceContainer>&ndash;&gt;-->
+        <!--&lt;!&ndash;</referenceContainer>&ndash;&gt;-->
+
+
+        <!--<move element="store_language" as="store_language" destination="header-wrapper" before="logo" />-->
+        <!--<move element="store.settings.currency" as="store.settings.currency" destination="header-wrapper" after="store_language" />-->
+
+        <!--<referenceContainer name="footer-container">-->
+            <!--<referenceContainer name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">-->
+                <!--&lt;!&ndash;<block class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/copyright.phtml"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<block class="Magento\Framework\View\Element\Template" name="report.bugs" template="Magento_Theme::html/bugreport.phtml" ifconfig="design/footer/report_bugs"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" template="Magento_Store::switch/stores.phtml"/>&ndash;&gt;-->
+                <!--<block class="Magento\Framework\View\Element\Html\Links" name="new_footer_links">-->
+                    <!--<arguments>-->
+                        <!--<argument name="css_class" xsi:type="string">new footer links</argument>-->
+                    <!--</arguments>-->
+                <!--</block>-->
+
+            <!--</referenceContainer>-->
+        <!--</referenceContainer>-->
 
 
 
-        <move element="store_language" destination="header.container" />
 
 
         </body>
