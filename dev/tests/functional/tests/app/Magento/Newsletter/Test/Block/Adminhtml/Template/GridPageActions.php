@@ -12,7 +12,7 @@ use Magento\Backend\Test\Block\GridPageActions as AbstractGridPageActions;
  * Class GridPageActions
  * Grid page actions block
  *
- * @package Magento\Newsletter\Test\Block\Adminhtml\Template
+ * @package Magento\Newsletter\Test\Index\Adminhtml\Template
  */
 class GridPageActions extends AbstractGridPageActions
 {

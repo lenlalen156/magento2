@@ -14,7 +14,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Test for \Magento\Backend\Block\Dashboard\Tab\Orders class.
+ * Test for \Magento\Backend\Index\Dashboard\Tab\Orders class.
  *
  * @magentoAppArea adminhtml
  */

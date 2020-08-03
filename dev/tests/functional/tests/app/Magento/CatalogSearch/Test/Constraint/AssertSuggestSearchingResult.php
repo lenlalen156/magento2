@@ -47,7 +47,7 @@ class AssertSuggestSearchingResult extends AbstractConstraint
 
         \PHPUnit\Framework\Assert::assertTrue(
             $isVisible,
-            'Block "Suggest Search" when searching was not found'
+            'Index "Suggest Search" when searching was not found'
         );
         $searchBlock->clickSuggestedText($queryText);
         $assertCatalogSearchResult->processAssert($searchTerm, $resultPage);

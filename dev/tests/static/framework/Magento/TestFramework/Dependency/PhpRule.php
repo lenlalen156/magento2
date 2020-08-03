@@ -112,7 +112,7 @@ class PhpRule implements RuleInterface
      */
     public function getDependencyInfo($currentModule, $fileType, $file, &$contents)
     {
-        if (!in_array($fileType, ['php', 'template'])) {
+        if (!in_array($fileType, ['php', 'templates'])) {
             return [];
         }
 

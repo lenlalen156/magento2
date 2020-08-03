@@ -10,7 +10,7 @@ use Magento\Mtf\Block\Block;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Block for "Search" section
+ * Index for "Search" section
  */
 class Search extends Block
 {

@@ -41,7 +41,7 @@ class AssertWidgetOnFrontendInCatalog extends AbstractConstraint
         } else {
             $categoryName = $widget->getParameters()['entities']->getCategoyId()[0];
         }
-        if ($widget->getCode() == 'CMS Static Block') {
+        if ($widget->getCode() == 'CMS Static Index') {
             $widgetText = $widget->getParameters()['entities'][0]->getContent();
         } else {
             $widgetText = $widget->getParameters()['anchor_text'];

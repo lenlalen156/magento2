@@ -36,7 +36,7 @@ class HtmlDirectiveSniff implements Sniff
     }
 
     /**
-     * Detect invalid usage of template filter directives
+     * Detect invalid usage of templates filter directives
      *
      * @param File $phpcsFile
      * @param int $stackPtr
@@ -69,7 +69,7 @@ class HtmlDirectiveSniff implements Sniff
      *
      * @param string $html
      * @param File $phpcsFile
-     * @return string The processed template
+     * @return string The processed templates
      */
     private function processIfDirectives(string $html, File $phpcsFile): string
     {
@@ -89,7 +89,7 @@ class HtmlDirectiveSniff implements Sniff
      *
      * @param string $html
      * @param File $phpcsFile
-     * @return string The processed template
+     * @return string The processed templates
      */
     private function processDependDirectives(string $html, File $phpcsFile): string
     {
@@ -109,7 +109,7 @@ class HtmlDirectiveSniff implements Sniff
      *
      * @param string $html
      * @param File $phpcsFile
-     * @return string The processed template
+     * @return string The processed templates
      */
     private function processForDirectives(string $html, File $phpcsFile): string
     {
@@ -129,7 +129,7 @@ class HtmlDirectiveSniff implements Sniff
      *
      * @param string $html
      * @param File $phpcsFile
-     * @return string The processed template
+     * @return string The processed templates
      */
     private function processVarDirectivesAndParams(string $html, File $phpcsFile): string
     {
@@ -203,7 +203,7 @@ class HtmlDirectiveSniff implements Sniff
     }
 
     /**
-     * Validate the variables defined in the template comment block match the variables actually used in the template
+     * Validate the variables defined in the templates comment block match the variables actually used in the templates
      *
      * @param File $phpcsFile
      * @param string $templateText
@@ -247,7 +247,7 @@ class HtmlDirectiveSniff implements Sniff
         $undefinedVariables = array_diff($this->usedVariables, $definedVariables, $this->unfilteredVariables);
         foreach ($undefinedVariables as $undefinedVariable) {
             $phpcsFile->addError(
-                'Template @vars comment block is missing a variable used in the template.' . PHP_EOL
+                'Template @vars comment block is missing a variable used in the templates.' . PHP_EOL
                  . 'Missing variable: ' . $undefinedVariable,
                 null,
                 'HtmlTemplates.DirectiveUsage.UndefinedVariable'

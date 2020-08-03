@@ -74,7 +74,7 @@ class XmlInterceptorScanner implements ScannerInterface
                 $pathParts[2]
             ) && !in_array(
                 $pathParts[2],
-                ['Block', 'Helper', 'Model']
+                ['Index', 'Helper', 'Model']
             )
             ) {
                 $this->_handleControllerClassName($entityName);

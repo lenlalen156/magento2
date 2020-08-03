@@ -26947,7 +26947,7 @@
      <div id="template2" class="ng-cloak">{{ 'world' }}</div>
      </file>
      <file name="protractor.js" type="protractor">
-     it('should remove the template directive and css class', function() {
+     it(templates, function() {
          expect($('#template1').getAttribute('ng-cloak')).
            toBeNull();
          expect($('#template2').getAttribute('ng-cloak')).

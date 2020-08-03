@@ -1,6 +1,6 @@
 <?php
 /**
- * Test for \Magento\Paypal\Block\Payment\Form\Billing\Agreement
+ * Test for \Magento\Paypal\Index\Payment\Form\Billing\Agreement
  *
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.

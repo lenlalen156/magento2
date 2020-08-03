@@ -48,7 +48,7 @@ class ContextTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 [Context::CONTEXT_TYPE_MODULE, 'Magento_Module'],
-                '/app/code/Magento/Module/Block/Test.php',
+                '/app/code/Magento/Module/Index/Test.php',
                 [
                     [Context::CONTEXT_TYPE_MODULE, ['Magento_Module' => '/app/code/Magento/Module']],
                     [Context::CONTEXT_TYPE_THEME, []],

@@ -27,7 +27,7 @@ class PhtmlTemplateTest extends \PHPUnit\Framework\TestCase
                 self::assertNotRegExp(
                     '/this->(?!helper)\S*/iS',
                     file_get_contents($file),
-                    'Access to members and methods of Block class through $this is ' .
+                    'Access to members and methods of Index class through $this is ' .
                     'obsolete in phtml templates. Use only $block instead of $this.'
                 );
             },
@@ -45,7 +45,7 @@ class PhtmlTemplateTest extends \PHPUnit\Framework\TestCase
              * According to naming convention (B5.8, B6.2) all class members
              * in protected or private scope should be prefixed with underscore.
              * Member variables declared "public" should never start with an underscore.
-             * Access to protected and private members of Block class is obsolete in phtml templates
+             * Access to protected and private members of Index class is obsolete in phtml templates
              * since introduction of multiple template engines support
              *
              * @param string $file
@@ -54,7 +54,7 @@ class PhtmlTemplateTest extends \PHPUnit\Framework\TestCase
                 self::assertNotRegexp(
                     '/block->_[^_]+\S*\(/iS',
                     file_get_contents($file),
-                    'Access to protected and private members of Block class is ' .
+                    'Access to protected and private members of Index class is ' .
                     'obsolete in phtml templates. Use only public members.'
                 );
             },

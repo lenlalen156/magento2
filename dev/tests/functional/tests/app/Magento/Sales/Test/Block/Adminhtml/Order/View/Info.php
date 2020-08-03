@@ -10,7 +10,7 @@ use Magento\Mtf\Block\Block;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Block for information about customer on order page
+ * Index for information about customer on order page
  *
  */
 class Info extends Block

@@ -20,7 +20,7 @@ class AssertCmsBlockNotOnCategoryPage extends AbstractConstraint
 {
     /**
      * Assert that created CMS block non visible on frontend category page
-     * (in order to assign block to category: go to category page> Display settings> CMS Block)
+     * (in order to assign block to category: go to category page> Display settings> CMS Index)
      *
      * @param CmsIndex $cmsIndex
      * @param CmsBlock $cmsBlock

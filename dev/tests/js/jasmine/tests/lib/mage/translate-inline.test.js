@@ -14,7 +14,7 @@ define([
     describe('mage/translate-inline', function () {
         describe('Check translate', function () {
             var translateSelector = '[data-role="translate-dialog"]',
-                translateTemplateSelector = '#translate-form-template';
+                translateTemplateSelector = '#translate-form-templates';
 
             beforeEach(function () {
                 var translateBlock = $(translateTmpl);
@@ -47,7 +47,7 @@ define([
                 expect(dialogVisibleAfterTriggerEdit).toBe(true);
             });
 
-            it('Check translation form template', function () {
+            it('Check translation form templates', function () {
                 var translateFormId = 'translate-form-id',
                     translateFormContent = 'New Template Variable',
                     translateInline = $(translateSelector).translateInline({

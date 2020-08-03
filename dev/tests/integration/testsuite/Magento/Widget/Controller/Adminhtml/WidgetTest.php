@@ -11,13 +11,13 @@ namespace Magento\Widget\Controller\Adminhtml;
 class WidgetTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
     /**
-     * Partially covers \Magento\Widget\Block\Adminhtml\Widget\Options::_addField()
+     * Partially covers \Magento\Widget\Index\Adminhtml\Widget\Options::_addField()
      */
     public function testLoadOptionsAction()
     {
         $this->getRequest()->setParam(
             'widget',
-            '{"widget_type":"Magento\\\\Cms\\\\Block\\\\Widget\\\\Page\\\\Link","values":{}}'
+            '{"widget_type":"Magento\\\\Cms\\\\Index\\\\Widget\\\\Page\\\\Link","values":{}}'
         );
         $this->dispatch('backend/admin/widget/loadOptions');
         $output = $this->getResponse()->getBody();

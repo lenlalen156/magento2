@@ -9,7 +9,7 @@ use Magento\Mtf\Block\Form;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Click Load button in Email template form.
+ * Click Load button in Email templates form.
  * this class needs to be created because we need a customized click on the 'Load' button, its not a standard click
  */
 class TemplateForm extends Form

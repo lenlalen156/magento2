@@ -20,7 +20,7 @@ use Magento\Mtf\TestCase\Injectable;
  * 5. Click the "Load Template" button.
  * 6. Enter Email Template name.
  * 7. Click the "Save" button.
- * 8. Verify the email template saved successfully.
+ * 8. Verify the email templates saved successfully.
  * @group Email_(PS)
  * @ZephyrId MAGETWO-17155
  */
@@ -49,7 +49,7 @@ class CreateEmailTemplateEntityTest extends Injectable
     private $emailTemplateNew;
 
     /**
-     * Inject Email template pages.
+     * Inject Email templates pages.
      *
      * @param EmailTemplateIndex $emailTemplateIndex
      * @param EmailTemplateNew $emailTemplateNew

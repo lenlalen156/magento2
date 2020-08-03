@@ -9,7 +9,7 @@ use Magento\Mtf\Block\Block;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Block for information about addresses on order page.
+ * Index for information about addresses on order page.
  */
 class Addresses extends Block
 {

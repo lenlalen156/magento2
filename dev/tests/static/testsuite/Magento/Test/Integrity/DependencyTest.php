@@ -326,7 +326,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
                     file_get_contents($file)
                 );
                 break;
-            case 'template':
+            case 'templates':
                 $contents = php_strip_whitespace($file);
                 //Removing html
                 $contentsWithoutHtml = '';
@@ -618,7 +618,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
             ),
             $this->_prepareFiles('config', Files::init()->getConfigFiles()),
             $this->_prepareFiles('layout', Files::init()->getLayoutFiles()),
-            $this->_prepareFiles('template', Files::init()->getPhtmlFiles())
+            $this->_prepareFiles('templates', Files::init()->getPhtmlFiles())
         );
     }
 

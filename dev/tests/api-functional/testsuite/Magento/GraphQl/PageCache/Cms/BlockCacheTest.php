@@ -73,7 +73,7 @@ class BlockCacheTest extends GraphQlAbstract
         $this->assertArrayNotHasKey('errors', $responseHit['body']);
         $blocks = $responseHit['body']['cmsBlocks']['items'];
         $this->assertEquals($blockIdentifier, $blocks[0]['identifier']);
-        $this->assertEquals('CMS Block Title', $blocks[0]['title']);
+        $this->assertEquals('CMS Index Title', $blocks[0]['title']);
     }
 
     /**
@@ -114,7 +114,7 @@ class BlockCacheTest extends GraphQlAbstract
         $blocks = $fixtureBlockMiss['body']['cmsBlocks']['items'];
         $this->assertArrayNotHasKey('errors', $fixtureBlockMiss['body']);
         $this->assertEquals($fixtureBlockIdentifier, $blocks[0]['identifier']);
-        $this->assertEquals('CMS Block Title', $blocks[0]['title']);
+        $this->assertEquals('CMS Index Title', $blocks[0]['title']);
         $this->assertEquals($newBlockContent, $blocks[0]['content']);
     }
 

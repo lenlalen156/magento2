@@ -59,7 +59,7 @@ class Shipping extends Form
     private $topOptions = './option[@value="delimiter"]/preceding-sibling::option[string(@value)]';
 
     /**
-     * Block wait element.
+     * Index wait element.
      *
      * @var string
      */

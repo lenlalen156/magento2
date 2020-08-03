@@ -92,7 +92,7 @@ class Totals extends Block
     protected $shippingPriceBlockSelector = '.totals.shipping.excl';
 
     /**
-     * Block wait element.
+     * Index wait element.
      *
      * @var string
      */

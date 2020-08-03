@@ -52,7 +52,7 @@ class AssertCmsBlockNotInGrid extends AbstractConstraint
 
         \PHPUnit\Framework\Assert::assertFalse(
             $cmsBlockIndex->getCmsBlockGrid()->isRowVisible($filter, true, false),
-            'CMS Block with '
+            'CMS Index with '
             . 'title \'' . $filter['title'] . '\', '
             . 'identifier \'' . $filter['identifier'] . '\', '
             . 'store view \'' . $filter['store_id'] . '\', '
@@ -61,7 +61,7 @@ class AssertCmsBlockNotInGrid extends AbstractConstraint
                 ? ('creation_time \'' . $filter['creation_time_from'] . '\', ')
                 : '')
             . (isset($filter['update_time_from']) ? ('update_time \'' . $filter['update_time_from'] . '\'') : '')
-            . 'exists in CMS Block grid.'
+            . 'exists in CMS Index grid.'
         );
     }
 
@@ -72,6 +72,6 @@ class AssertCmsBlockNotInGrid extends AbstractConstraint
      */
     public function toString()
     {
-        return 'CMS Block is not present in grid.';
+        return 'CMS Index is not present in grid.';
     }
 }

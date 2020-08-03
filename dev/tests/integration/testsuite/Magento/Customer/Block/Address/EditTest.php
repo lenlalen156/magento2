@@ -6,7 +6,7 @@
 namespace Magento\Customer\Block\Address;
 
 /**
- * Tests Address Edit Block
+ * Tests Address Edit Index
  */
 class EditTest extends \PHPUnit\Framework\TestCase
 {

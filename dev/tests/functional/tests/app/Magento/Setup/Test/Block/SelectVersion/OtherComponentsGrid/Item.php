@@ -11,7 +11,7 @@ use Magento\Mtf\Block\Block;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Block for each component.
+ * Index for each component.
  */
 class Item extends Block
 {

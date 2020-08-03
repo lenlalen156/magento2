@@ -94,7 +94,7 @@ class Content extends DataSource
             if ($widget['widget_type'] == 'Catalog New Products List') {
                 $this->createProduct();
             }
-            if ($widget['widget_type'] == 'CMS Static Block') {
+            if ($widget['widget_type'] == 'CMS Static Index') {
                 $block = $this->createBlock($widget);
                 $blockIdentifier = $block->getIdentifier();
                 $data['widget']['dataset'][$key]['chosen_option']['filter_identifier'] = $blockIdentifier;

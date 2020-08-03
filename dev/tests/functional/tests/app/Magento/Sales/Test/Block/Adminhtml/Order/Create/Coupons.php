@@ -31,7 +31,7 @@ class Coupons extends Form
     protected $applyButton = './/*[@id="coupons:code"]/following-sibling::button[contains(@onclick,"coupons:code")]';
 
     /**
-     * Selector for template block.
+     * Selector for templates block.
      *
      * @var string
      */
@@ -54,7 +54,7 @@ class Coupons extends Form
     }
 
     /**
-     * Get template block.
+     * Get templates block.
      *
      * @return Template
      */

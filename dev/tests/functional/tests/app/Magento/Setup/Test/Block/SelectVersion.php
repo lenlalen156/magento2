@@ -39,7 +39,7 @@ class SelectVersion extends Form
     private $showAllVersions = '#showUnstable';
 
     /**
-     * CSS selector for Other Components Grid Block.
+     * CSS selector for Other Components Grid Index.
      *
      * @var string
      */

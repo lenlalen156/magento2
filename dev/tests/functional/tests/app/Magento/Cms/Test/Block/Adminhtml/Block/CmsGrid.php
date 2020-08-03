@@ -10,7 +10,7 @@ use Magento\Mtf\Client\Element\SimpleElement;
 use Magento\Ui\Test\Block\Adminhtml\DataGrid;
 
 /**
- * Backend Data Grid for managing "CMS Block" entities.
+ * Backend Data Grid for managing "CMS Index" entities.
  */
 class CmsGrid extends DataGrid
 {

@@ -59,13 +59,13 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractController
      *
      * The following is verified:
      * - \Magento\Wishlist\Model\ResourceModel\Item\Collection
-     * - \Magento\Wishlist\Block\Customer\Wishlist
-     * - \Magento\Wishlist\Block\Customer\Wishlist\Items
-     * - \Magento\Wishlist\Block\Customer\Wishlist\Item\Column
-     * - \Magento\Wishlist\Block\Customer\Wishlist\Item\Column\Cart
-     * - \Magento\Wishlist\Block\Customer\Wishlist\Item\Column\Comment
-     * - \Magento\Wishlist\Block\Customer\Wishlist\Button
-     * - that \Magento\Wishlist\Block\Customer\Wishlist\Item\Options doesn't throw a fatal error
+     * - \Magento\Wishlist\Index\Customer\Wishlist
+     * - \Magento\Wishlist\Index\Customer\Wishlist\Items
+     * - \Magento\Wishlist\Index\Customer\Wishlist\Item\Column
+     * - \Magento\Wishlist\Index\Customer\Wishlist\Item\Column\Cart
+     * - \Magento\Wishlist\Index\Customer\Wishlist\Item\Column\Comment
+     * - \Magento\Wishlist\Index\Customer\Wishlist\Button
+     * - that \Magento\Wishlist\Index\Customer\Wishlist\Item\Options doesn't throw a fatal error
      *
      * @magentoDataFixture Magento/Wishlist/_files/wishlist.php
      */

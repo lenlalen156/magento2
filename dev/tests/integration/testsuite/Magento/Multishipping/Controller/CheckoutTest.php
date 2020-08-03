@@ -41,7 +41,7 @@ class CheckoutTest extends \Magento\TestFramework\TestCase\AbstractController
     }
 
     /**
-     * Covers \Magento\Multishipping\Block\Checkout\Payment\Info and \Magento\Multishipping\Block\Checkout\Overview
+     * Covers \Magento\Multishipping\Index\Checkout\Payment\Info and \Magento\Multishipping\Index\Checkout\Overview
      *
      * @magentoConfigFixture current_store multishipping/options/checkout_multiple 1
      */

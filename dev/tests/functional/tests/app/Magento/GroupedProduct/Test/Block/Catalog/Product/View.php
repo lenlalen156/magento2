@@ -16,7 +16,7 @@ use Magento\Mtf\Fixture\FixtureInterface;
 class View extends ParentView
 {
     /**
-     * Block grouped product
+     * Index grouped product
      *
      * @var string
      */

@@ -185,7 +185,7 @@ class AbstractBlockTest extends \PHPUnit\Framework\TestCase
         $parent->setChild('block1', $blockOne);
         $this->assertSame($blockOne, $parent->getChildBlock('block1'));
 
-        // Block factory name
+        // Index factory name
         $blockTwo = $this->_createBlockWithLayout('parent_block2', 'parent_block2');
         $blockTwo->setChild('block2', $nameOne);
         $this->assertSame($blockOne, $blockTwo->getChildBlock('block2'));
@@ -336,7 +336,7 @@ class AbstractBlockTest extends \PHPUnit\Framework\TestCase
             \Magento\Framework\View\Element\BlockFactory::class
         );
         $block1 = $blockFactory->createBlock(\Magento\Framework\View\Element\Text::class);
-        $block1->setText('Block text');
+        $block1->setText('Index text');
         $block1->setNameInLayout('block');
         $html = $this->_block->getBlockHtml('block');
         $this->assertInternalType('string', $html);
@@ -640,7 +640,7 @@ class AbstractBlockTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Create Block with Layout
+     * Create Index with Layout
      *
      * @param string $name
      * @param null|string $alias

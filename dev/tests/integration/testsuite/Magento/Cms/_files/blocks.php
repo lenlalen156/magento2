@@ -21,9 +21,9 @@ $storeId = Bootstrap::getObjectManager()->get(StoreManagerInterface::class)->get
 $block = $blockFactory->create([
     'data' => [
         BlockInterface::IDENTIFIER => 'enabled_block',
-        BlockInterface::TITLE => 'Enabled CMS Block Title',
+        BlockInterface::TITLE => 'Enabled CMS Index Title',
         BlockInterface::CONTENT => '
-            <h1>Enabled Block</h1>
+            <h1>Enabled Index</h1>
             <a href="{{store url=""}}">store url</a>
             <p>Config value: "{{config path="web/unsecure/base_url"}}".</p>
             <p>Custom variable: "{{customvar code="variable_code"}}".</p>
@@ -38,9 +38,9 @@ $blockRepository->save($block);
 $block = $blockFactory->create([
     'data' => [
         BlockInterface::IDENTIFIER => 'disabled_block',
-        BlockInterface::TITLE => 'Disabled CMS Block Title',
+        BlockInterface::TITLE => 'Disabled CMS Index Title',
         BlockInterface::CONTENT => '
-            <h1>Disabled Block</h1>
+            <h1>Disabled Index</h1>
             <a href="{{store url=""}}">store url</a>
             <p>Config value: "{{config path="web/unsecure/base_url"}}".</p>
             <p>Custom variable: "{{customvar code="variable_code"}}".</p>

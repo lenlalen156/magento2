@@ -14,7 +14,7 @@ use Magento\TestFramework\TestCase\GraphQlAbstract;
 use Magento\Widget\Model\Template\FilterEmulate;
 
 /**
- * Get CMS Block test
+ * Get CMS Index test
  */
 class CmsBlockTest extends GraphQlAbstract
 {
@@ -35,7 +35,7 @@ class CmsBlockTest extends GraphQlAbstract
     }
 
     /**
-     * Verify the fields of CMS Block selected by identifiers
+     * Verify the fields of CMS Index selected by identifiers
      *
      * @magentoApiDataFixture Magento/Cms/_files/blocks.php
      */
@@ -68,7 +68,7 @@ QUERY;
     }
 
     /**
-     * Verify the fields of CMS Block selected by block_id
+     * Verify the fields of CMS Index selected by block_id
      *
      * @magentoApiDataFixture Magento/Cms/_files/blocks.php
      */
@@ -101,7 +101,7 @@ QUERY;
     }
 
     /**
-     * Verify the message when CMS Block is disabled
+     * Verify the message when CMS Index is disabled
      *
      * @expectedException \Exception
      * @expectedExceptionMessage The CMS block with the "disabled_block" ID doesn't exist
@@ -149,7 +149,7 @@ QUERY;
     }
 
     /**
-     * Verify the message when CMS Block with such identifiers does not exist
+     * Verify the message when CMS Index with such identifiers does not exist
      *
      * @expectedException \Exception
      * @expectedExceptionMessage The CMS block with the "nonexistent_id" ID doesn't exist.
@@ -172,7 +172,7 @@ QUERY;
     }
 
     /**
-     * Verify the fields of CMS Block selected by identifiers
+     * Verify the fields of CMS Index selected by identifiers
      *
      * @magentoApiDataFixture Magento/Cms/_files/blocks.php
      */

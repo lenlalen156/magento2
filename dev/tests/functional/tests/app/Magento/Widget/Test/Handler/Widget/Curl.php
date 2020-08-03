@@ -41,8 +41,8 @@ class Curl extends AbstractCurl
             'Generic Pages/Page Layouts' => 'page_layouts',
             'Categories/Non-Anchor Categories' => 'notanchor_categories',
         ],
-        'template' => [
-            'CMS Page Link Block Template' => 'widget/link/link_block.phtml',
+        'templates' => [
+            'CMS Page Link Index Template' => 'widget/link/link_block.phtml',
             'New Products List Template' => 'product/widget/new/content/new_grid.phtml',
         ],
         'layout_handle' => [
@@ -200,8 +200,8 @@ class Curl extends AbstractCurl
             : 'default';
         $widgetInstance['for'] = 'all';
         $widgetInstance['block'] = $widgetInstancePageGroup['block'];
-        $widgetInstance['template'] = isset($widgetInstancePageGroup['template'])
-            ? $widgetInstancePageGroup['template']
+        $widgetInstance['templates'] = isset($widgetInstancePageGroup['templates'])
+            ? $widgetInstancePageGroup['templates']
             : $this->widgetInstanceTemplate;
 
         return $widgetInstance;

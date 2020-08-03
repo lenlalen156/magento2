@@ -13,6 +13,6 @@ return [
     ['Magento_Backend', 'Model/View.php'],
     ['Magento_Backend', 'App/AbstractAction.php'],
     ['Magento_Backend', 'App/Response/Http/FileFactory.php'],
-    ['Magento_Backend', 'Block/Widget.php'],
-    ['Magento_Backend', 'Block/System/Config/Dwstree.php'],
+    ['Magento_Backend', 'Index/Widget.php'],
+    ['Magento_Backend', 'Index/System/Config/Dwstree.php'],
 ];

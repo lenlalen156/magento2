@@ -12,7 +12,7 @@ use Magento\Sales\Model\Order;
 use Magento\Sales\Model\OrderFactory;
 
 /**
- * Test class for \Magento\Sales\Block\Adminhtml\Totals
+ * Test class for \Magento\Sales\Index\Adminhtml\Totals
  */
 class TotalsTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {

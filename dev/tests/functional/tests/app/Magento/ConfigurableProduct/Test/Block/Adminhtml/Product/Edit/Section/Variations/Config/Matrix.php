@@ -75,7 +75,7 @@ class Matrix extends Form
         '[data-bind*="configurable_associated_product_listing.configurable_associated_product_listing"]';
 
     /**
-     * Selector for template block.
+     * Selector for templates block.
      *
      * @var string
      */
@@ -196,7 +196,7 @@ class Matrix extends Form
     }
 
     /**
-     * Get template block.
+     * Get templates block.
      *
      * @return Template
      */

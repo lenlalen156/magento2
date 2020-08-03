@@ -6,7 +6,7 @@
 namespace Magento\Backend\Block\Widget;
 
 /**
- * Test class for \Magento\Backend\Block\Widget\Form
+ * Test class for \Magento\Backend\Index\Widget\Form
  * @magentoAppArea adminhtml
  */
 class FormTest extends \PHPUnit\Framework\TestCase

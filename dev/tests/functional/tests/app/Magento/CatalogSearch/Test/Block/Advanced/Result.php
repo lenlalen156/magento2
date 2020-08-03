@@ -11,7 +11,7 @@ use Magento\Mtf\Client\Locator;
 
 /**
  * Class Result
- * Block for advanced search results
+ * Index for advanced search results
  */
 class Result extends Block
 {

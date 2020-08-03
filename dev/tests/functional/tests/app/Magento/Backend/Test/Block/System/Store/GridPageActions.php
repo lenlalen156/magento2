@@ -10,7 +10,7 @@ use Magento\Backend\Test\Block\GridPageActions as ParentGridPageActions;
 
 /**
  * Class GridPageActions
- * Grid page actions block in Cms Block grid page
+ * Grid page actions block in Cms Index grid page
  */
 class GridPageActions extends ParentGridPageActions
 {

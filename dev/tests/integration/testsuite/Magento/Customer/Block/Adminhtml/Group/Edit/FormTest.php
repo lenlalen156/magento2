@@ -11,7 +11,7 @@ use Magento\Customer\Controller\RegistryConstants;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * Magento\Customer\Block\Adminhtml\Group\Edit\Form
+ * Magento\Customer\Index\Adminhtml\Group\Edit\Form
  *
  * @magentoAppArea adminhtml
  */

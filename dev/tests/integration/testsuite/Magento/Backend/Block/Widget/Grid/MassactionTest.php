@@ -9,7 +9,7 @@ use Magento\TestFramework\App\State;
 
 /**
  * @magentoAppArea adminhtml
- * @magentoComponentsDir Magento/Backend/Block/_files/design
+ * @magentoComponentsDir Magento/Backend/Index/_files/design
  * @magentoDbIsolation enabled
  */
 class MassactionTest extends \PHPUnit\Framework\TestCase

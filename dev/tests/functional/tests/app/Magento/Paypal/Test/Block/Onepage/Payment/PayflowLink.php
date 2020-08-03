@@ -12,7 +12,7 @@ namespace Magento\Paypal\Test\Block\Onepage\Payment;
 class PayflowLink extends PaypalIframe
 {
     /**
-     * Block for filling credit card data for Payflow Link payment method.
+     * Index for filling credit card data for Payflow Link payment method.
      *
      * @var string
      */

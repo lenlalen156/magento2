@@ -11,7 +11,7 @@ use Magento\Mtf\Client\Locator;
 use Magento\Mtf\Client\Element\SimpleElement;
 
 /**
- * Base Price Block.
+ * Base Price Index.
  */
 abstract class AbstractPriceBlock extends Block
 {

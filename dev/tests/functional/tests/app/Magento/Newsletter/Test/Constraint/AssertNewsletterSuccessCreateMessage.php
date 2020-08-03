@@ -20,10 +20,10 @@ class AssertNewsletterSuccessCreateMessage extends AbstractConstraint
     const SEVERITY = 'low';
     /* end tags */
 
-    const SUCCESS_MESSAGE = 'The newsletter template has been saved.';
+    const SUCCESS_MESSAGE = 'The newsletter templates has been saved.';
 
     /**
-     * Assert that success message is displayed after newsletter template save
+     * Assert that success message is displayed after newsletter templates save
      *
      * @param TemplateIndex $templateIndex
      */
@@ -40,7 +40,7 @@ class AssertNewsletterSuccessCreateMessage extends AbstractConstraint
     }
 
     /**
-     * Success assert of created newsletter template success message
+     * Success assert of created newsletter templates success message
      *
      * @return string
      */

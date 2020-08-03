@@ -6,7 +6,7 @@
 namespace Magento\Catalog\Block\Product;
 
 /**
- * Test class for \Magento\Catalog\Block\Product\List.
+ * Test class for \Magento\Catalog\Index\Product\List.
  *
  * @magentoDataFixture Magento/Catalog/_files/product_simple.php
  * @magentoAppArea frontend
@@ -65,7 +65,7 @@ class ListTest extends \PHPUnit\Framework\TestCase
 
         $parent->setChild('toolbar', $toolbar);
         /* In order to initialize toolbar collection block toHtml should be called before toolbar toHtml */
-        $this->assertEmpty($parent->toHtml(), 'Block HTML'); /* Template not specified */
+        $this->assertEmpty($parent->toHtml(), 'Index HTML'); /* Template not specified */
         $this->assertEquals('grid', $parent->getMode(), 'Default Mode'); /* default mode */
         $this->assertNotEmpty($parent->getToolbarHtml(), 'Toolbar HTML'); /* toolbar for one simple product */
     }

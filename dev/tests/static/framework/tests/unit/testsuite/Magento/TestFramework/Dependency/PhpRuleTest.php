@@ -281,7 +281,7 @@ class PhpRuleTest extends \PHPUnit\Framework\TestCase
             ],
         ];
         $this->model = new PhpRule([], $mapLayoutBlocks);
-        $this->assertEquals($expected, $this->model->getDependencyInfo($module, 'template', 'any', $content));
+        $this->assertEquals($expected, $this->model->getDependencyInfo($module, 'templates', 'any', $content));
     }
 
     /**

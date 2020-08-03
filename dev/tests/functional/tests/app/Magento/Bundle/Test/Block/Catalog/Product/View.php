@@ -46,7 +46,7 @@ class View extends \Magento\Catalog\Test\Block\Product\View
     protected $newsletterFormSelector = '#newsletter-validate-detail[novalidate="novalidate"]';
 
     /**
-     * Summary Block selector.
+     * Summary Index selector.
      *
      * @var string
      */

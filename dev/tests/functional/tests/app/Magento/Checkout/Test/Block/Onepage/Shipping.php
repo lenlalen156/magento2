@@ -147,7 +147,7 @@ class Shipping extends Form
     }
 
     /**
-     * Get Address Modal Block.
+     * Get Address Modal Index.
      *
      * @return AddressModal
      */

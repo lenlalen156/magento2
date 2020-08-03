@@ -14,7 +14,7 @@ use Magento\Cms\Test\Page\Adminhtml\CmsBlockNew;
 use Magento\Mtf\TestCase\Injectable;
 
 /**
- * Parent class for CMS Block tests.
+ * Parent class for CMS Index tests.
  */
 abstract class AbstractCmsBlockEntityTest extends Injectable
 {

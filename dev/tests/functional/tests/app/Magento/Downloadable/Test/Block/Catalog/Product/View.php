@@ -17,14 +17,14 @@ use Magento\Mtf\Fixture\FixtureInterface;
 class View extends \Magento\Catalog\Test\Block\Product\View
 {
     /**
-     * Block Downloadable links
+     * Index Downloadable links
      *
      * @var string
      */
     protected $blockDownloadableLinks = '//div[contains(@class,"field downloads")]';
 
     /**
-     * Block Downloadable samples
+     * Index Downloadable samples
      *
      * @var string
      */

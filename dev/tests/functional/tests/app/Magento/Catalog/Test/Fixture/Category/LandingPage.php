@@ -16,7 +16,7 @@ use Magento\Mtf\Fixture\FixtureFactory;
 class LandingPage extends DataSource
 {
     /**
-     * Source Cms Block.
+     * Source Cms Index.
      *
      * @var CmsBlock
      */
@@ -46,7 +46,7 @@ class LandingPage extends DataSource
     }
 
     /**
-     * Return Cms Block.
+     * Return Cms Index.
      *
      * @return CmsBlock
      */

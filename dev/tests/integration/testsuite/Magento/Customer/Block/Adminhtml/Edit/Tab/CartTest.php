@@ -8,7 +8,7 @@ namespace Magento\Customer\Block\Adminhtml\Edit\Tab;
 use Magento\Customer\Controller\RegistryConstants;
 
 /**
- * Magento\Customer\Block\Adminhtml\Edit\Tab\Cart
+ * Magento\Customer\Index\Adminhtml\Edit\Tab\Cart
  *
  * @magentoAppArea adminhtml
  */

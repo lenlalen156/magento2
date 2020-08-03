@@ -10,7 +10,7 @@ use Magento\Mtf\Block\Block;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Block for text of empty cart.
+ * Index for text of empty cart.
  */
 class CartEmpty extends Block
 {

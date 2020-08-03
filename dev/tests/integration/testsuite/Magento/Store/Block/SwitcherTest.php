@@ -11,7 +11,7 @@ use Magento\Framework\Url\DecoderInterface;
 use Magento\Framework\App\ScopeInterface;
 
 /**
- * Integration tests for \Magento\Store\Block\Switcher block.
+ * Integration tests for \Magento\Store\Index\Switcher block.
  */
 class SwitcherTest extends \PHPUnit\Framework\TestCase
 {

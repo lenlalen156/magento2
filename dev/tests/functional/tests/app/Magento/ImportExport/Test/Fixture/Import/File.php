@@ -110,7 +110,7 @@ class File extends DataSource
             return parent::getData($key);
         }
 
-        $filename = MTF_TESTS_PATH . $this->value['template']['filename'] . '.php';
+        $filename = MTF_TESTS_PATH . $this->value['templates']['filename'] . '.php';
         if (!file_exists($filename)) {
             throw new \Exception("CSV file '{$filename}'' not found on the server.");
         }
@@ -126,12 +126,12 @@ class File extends DataSource
             $this->preparePlaceHolders();
         }
 
-        if (isset($this->value['template']) && is_array($this->value['template'])) {
+        if (isset($this->value['templates']) && is_array($this->value['templates'])) {
             $csvTemplate = $this->objectManager->create(
                 CsvTemplate::class,
                 [
                     'config' => array_merge(
-                        $this->value['template'],
+                        $this->value['templates'],
                         [
                             'placeholders' => $this->placeholders
                         ]
@@ -259,15 +259,15 @@ class File extends DataSource
     private function getWebsitesData(FixtureInterface $entity)
     {
         $entityData = [];
-        $currency = isset($this->value['template']['websiteCurrency'])
-            ? "[{$this->value['template']['websiteCurrency']}]"
+        $currency = isset($this->value['templates']['websiteCurrency'])
+            ? "[{$this->value['templates']['websiteCurrency']}]"
             : '[USD]';
 
         $websites = $entity->getDataFieldConfig('website_ids')['source']->getWebsites();
         foreach ($websites as $website) {
             if ($website->getCode() === 'base') {
-                $currency = isset($this->value['template']['mainWebsiteCurrency'])
-                    ? $this->value['template']['mainWebsiteCurrency']
+                $currency = isset($this->value['templates']['mainWebsiteCurrency'])
+                    ? $this->value['templates']['mainWebsiteCurrency']
                     : '[USD]';
                 $this->mainWebsiteMapping['base'] = $website->getName() . "[{$currency}]";
                 break;

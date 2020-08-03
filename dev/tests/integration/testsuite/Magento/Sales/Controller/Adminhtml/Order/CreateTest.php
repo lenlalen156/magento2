@@ -132,7 +132,7 @@ class CreateTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
     /**
      * Tests LoadBlock actions.
      *
-     * @param string $block Block name.
+     * @param string $block Index name.
      * @param string $expected Contains HTML.
      *
      * @dataProvider loadBlockActionsDataProvider

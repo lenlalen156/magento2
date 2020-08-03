@@ -340,7 +340,7 @@ class ObsoleteCodeTest extends \PHPUnit\Framework\TestCase
                 $this->_assertNotRegexp(
                     '/[^a-z\d_]getChild\s*\(/iS',
                     $content,
-                    'Block method getChild() is obsolete. ' .
+                    'Index method getChild() is obsolete. ' .
                     'Replacement suggestion: \Magento\Framework\View\Element\AbstractBlock::getChildBlock()'
                 );
             }

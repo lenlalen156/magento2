@@ -10,42 +10,74 @@ ge_configuration.xsd">
         </referenceBlock>
 
 
+        <!--remove -->
         <referenceBlock name="register-link" remove="true" />
         <referenceBlock name="authorization-link" remove="true" />
         <referenceBlock name="wish-list-link" remove="true" />
         <referenceBlock name="my-account-link" remove="true" />
-
+        <referenceBlock name="report.bugs" remove="true" />
+        <referenceBlock name="absolute_footer" remove="true" />
+        <referenceBlock name="footer_links" remove="true" />
+        <!--<referenceBlock name="footer_links" remove="true" />-->
+        <!--<referenceBlock name="copyright" remove="true" />-->
 
         <referenceBlock name="store_switcher" remove="true" />
         <referenceContainer name="div.sidebar.additional" remove="true"/>
 
+
+
+        <!--move -->
         <move element="store_language" as="store_language" destination="header-wrapper" before="logo" />
         <move element="store.settings.currency" as="store.settings.currency" destination="header-wrapper" after="store_language" />
 
+        <!--create-->
 
 
 
 
 
-        <referenceBlock name="footer">
-            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links_new">
+        <referenceContainer name="header.panel">
+            <block class="Magento\Cms\Block\Block" name="block_header">
                 <arguments>
-                    <argument name="css_class" xsi:type="string">footer links</argument>
+                    <argument name="block_id" xsi:type="string">block_header</argument>
                 </arguments>
-                <block class="Magento\Framework\View\Element\Html\Link\Current" name="block_xample">
-                    <arguments>
-                        <argument name="label" xsi:type="string">Block Label</argument>
-                    </arguments>
-                </block>
             </block>
-        </referenceBlock>
+        </referenceContainer>
+
+        <referenceContainer name="main"  >
+            <container name="main-top-content" htmlTag="div" htmlClass="main-top-content row">
+                <container name="main-top-content-child-1" htmlTag="div" htmlClass="col-6" >
+                    <block class="Magento\Cms\Block\Block" name="img_1">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">img_1</argument>
+                        </arguments>
+                    </block>
+                </container>
+                <container name="main-top-content-child-2" htmlTag="div" htmlClass="col-6" >
+                    <block class="Magento\Cms\Block\Block" name="img_2">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">img_2</argument>
+                        </arguments>
+                    </block>
+
+                    <block class="Magento\Block\Display" name="image_1" template="Magento_Theme::image_1.phtml"/>
+                </container>
+            </container>
+
+
+        </referenceContainer>
+
+
+
+
+
 
         <referenceBlock name="footer">
             <block class="Magento\Framework\View\Element\Html\Links" name="footer_account" before="-">
                 <arguments>
                     <argument name="css_class" xsi:type="string">footer links account</argument>
                 </arguments>
-                <block class="Magento\Framework\View\Element\Html\Link\Current" name="footer_account-title">
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="footer-account-title">
                     <arguments>
                         <argument name="label" xsi:type="string">ACCOUNT</argument>
                     </arguments>
@@ -69,7 +101,86 @@ ge_configuration.xsd">
                     </arguments>
                 </block>
             </block>
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_customer_care" before="footer_account" >
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links customer care</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="footer-customer-care-title">
+                    <arguments>
+                        <!--<argument name="label" xsi:type="string">CUSTOMER CARE</argument>-->
+                        <argument name="label" xsi:type="string">Contact us</argument>
+                        <argument name="path" xsi:type="string">customer/account/login</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="contact-us-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">CUSTOMER CARE</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="shipping-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Shipping</argument>
+                        <argument name="path" xsi:type="string">return-order</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="return-policy-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Return policy</argument>
+                        <argument name="path" xsi:type="string">order-lookup</argument>
+                    </arguments>
+                </block>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_about_adornmonde" before="footer_customer_care" >
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links about adornmonde</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="footer-about-adornmonde-title">
+                    <arguments>
+                        <argument name="label" xsi:type="string">ABOUT ADORNMONDE</argument>
+                        <argument name="label" xsi:type="string">Press  more</argument>
+                        <argument name="path" xsi:type="string">order-lookup</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="about-us-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">About us</argument>
+                        <argument name="path" xsi:type="string">customer/account/login</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="our-metarials-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Our metarials</argument>
+                        <argument name="path" xsi:type="string">return-order</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="affiliates-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">Affiliates</argument>
+                        <argument name="path" xsi:type="string">order-lookup</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="order-lookup-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">ABOUT ADORNMONDE</argument>
+                    </arguments>
+                </block>
+            </block>
+
         </referenceBlock>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -11,7 +11,7 @@ use Magento\Sales\Test\Block\Adminhtml\Order\Invoice\Form\Items\Product;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Block for items to invoice on new invoice page.
+ * Index for items to invoice on new invoice page.
  */
 class Items extends AbstractItemsNewBlock
 {

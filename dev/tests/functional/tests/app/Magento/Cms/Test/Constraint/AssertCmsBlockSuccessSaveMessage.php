@@ -41,6 +41,6 @@ class AssertCmsBlockSuccessSaveMessage extends AbstractConstraint
      */
     public function toString()
     {
-        return 'CMS Block success create message is present.';
+        return 'CMS Index success create message is present.';
     }
 }

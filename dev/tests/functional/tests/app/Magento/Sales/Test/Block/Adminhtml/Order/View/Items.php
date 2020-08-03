@@ -13,7 +13,7 @@ use Magento\Mtf\Fixture\InjectableFixture;
 
 /**
  * Class Items
- * Block for items ordered on order page
+ * Index for items ordered on order page
  */
 class Items extends Block
 {

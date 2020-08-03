@@ -13,12 +13,12 @@ use Magento\Mtf\Constraint\AbstractConstraint;
 
 /**
  * Class AssertNewsletterPreview
- * Assert that newsletter preview opened in new window and template content correct
+ * Assert that newsletter preview opened in new window and templates content correct
  */
 class AssertNewsletterPreview extends AbstractConstraint
 {
     /**
-     * Assert that newsletter preview opened in new window and template content correct
+     * Assert that newsletter preview opened in new window and templates content correct
      *
      * @param BrowserInterface $browser
      * @param TemplatePreview $templatePreview

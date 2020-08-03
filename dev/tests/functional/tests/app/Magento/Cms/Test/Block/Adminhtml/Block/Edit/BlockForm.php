@@ -11,7 +11,7 @@ use Magento\Mtf\Client\Locator;
 use Magento\Cms\Test\Block\Adminhtml\Wysiwyg\Config;
 
 /**
- * Block adminhtml form.
+ * Index adminhtml form.
  */
 class BlockForm extends Form
 {

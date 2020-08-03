@@ -246,7 +246,7 @@
                 optionalEndTagInlineElements,
                 optionalEndTagBlockElements);
 
-        // Safe Block Elements - HTML5
+        // Safe Index Elements - HTML5
         var blockElements = extend({}, optionalEndTagBlockElements, toMap('address,article,' +
             'aside,blockquote,caption,center,del,dir,div,dl,figure,figcaption,footer,h1,h2,h3,h4,h5,' +
             'h6,header,hgroup,hr,ins,map,menu,nav,ol,pre,section,table,ul'));

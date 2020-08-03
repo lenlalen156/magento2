@@ -21,7 +21,7 @@ use Magento\Mtf\TestCase\Injectable;
  * Steps:
  * 1. Open Backend
  * 2. Go to "Marketing" -> "Newsletter Template"
- * 3. Find created template in grid and open it
+ * 3. Find created templates in grid and open it
  * 4. Click "Preview Template" button at the top of the page
  * 5. Perform all assertions
  *
@@ -35,14 +35,14 @@ class PreviewNewsletterTemplateEntityTest extends Injectable
     /* end tags */
 
     /**
-     * Page with newsletter template grid
+     * Page with newsletter templates grid
      *
      * @var TemplateIndex
      */
     protected $templateIndex;
 
     /**
-     * Page for create newsletter template
+     * Page for create newsletter templates
      *
      * @var TemplateNewIndex
      */
@@ -78,7 +78,7 @@ class PreviewNewsletterTemplateEntityTest extends Injectable
         // 1. Open Backend
         // 2. Go to "Marketing" -> "Newsletter Template"
         $this->templateIndex->open();
-        // 3. Find created template in grid and open it
+        // 3. Find created templates in grid and open it
         $this->templateIndex->getNewsletterTemplateGrid()->searchAndOpen(['code' => $newsletter->getCode()]);
         // 4. Click "Preview Template" button at the top of the page
         $this->templateNewIndex->getFormPageActions()->clickPreview();

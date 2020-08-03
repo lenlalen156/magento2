@@ -102,7 +102,7 @@ class ViewTest extends \PHPUnit\Framework\TestCase
      */
     public function testPrepareAndRender()
     {
-        // need for \Magento\Review\Block\Form::getProductInfo()
+        // need for \Magento\Review\Index\Form::getProductInfo()
         $this->objectManager->get(\Magento\Framework\App\RequestInterface::class)->setParam('id', 10);
 
         $this->_helper->prepareAndRender($this->page, 10, $this->_controller);

@@ -32,7 +32,7 @@ class PageTest extends \Magento\TestFramework\TestCase\AbstractController
     }
 
     /**
-     * Test \Magento\Cms\Block\Page::_addBreadcrumbs
+     * Test \Magento\Cms\Index\Page::_addBreadcrumbs
      */
     public function testAddBreadcrumbs()
     {

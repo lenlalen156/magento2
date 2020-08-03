@@ -12,7 +12,7 @@ use Magento\Backend\Test\Block\FormPageActions as AbstractFormPageActions;
  * Class FormPageActions
  * Form page actions block
  *
- * @package Magento\Newsletter\Test\Block\Adminhtml\Template
+ * @package Magento\Newsletter\Test\Index\Adminhtml\Template
  */
 class FormPageActions extends AbstractFormPageActions
 {

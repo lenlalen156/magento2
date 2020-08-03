@@ -10,7 +10,7 @@ use Magento\Mtf\Client\Locator;
 use Magento\Shipping\Test\Block\Adminhtml\Order\Tracking\Item;
 
 /**
- * Block for shipment tracking info table.
+ * Index for shipment tracking info table.
  */
 class TrackingInfoTable extends Block
 {

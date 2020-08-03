@@ -11,7 +11,7 @@ use Magento\Cms\Test\Fixture\CmsBlock;
 /**
  * Preconditions:
  * 1. Create store view.
- * 2. Create CMS Block.
+ * 2. Create CMS Index.
  *
  * Steps:
  * 1. Open Backend.
@@ -31,7 +31,7 @@ class UpdateCmsBlockEntityTest extends AbstractCmsBlockEntityTest
     /* end tags */
 
     /**
-     * Run Update CMS Block test.
+     * Run Update CMS Index test.
      *
      * @param CmsBlock $initialCmsBlock
      * @param CmsBlock $cmsBlock

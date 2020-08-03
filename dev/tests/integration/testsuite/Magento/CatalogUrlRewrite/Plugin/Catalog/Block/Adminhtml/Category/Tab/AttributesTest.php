@@ -41,7 +41,7 @@ class AttributesTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * test \Magento\CatalogUrlRewrite\Plugin\Catalog\Block\Adminhtml\Category\Tab\Attributes::afterGetAttributesMeta
+     * test \Magento\CatalogUrlRewrite\Plugin\Catalog\Index\Adminhtml\Category\Tab\Attributes::afterGetAttributesMeta
      * @return void
      */
     public function testGetAttributesMeta()

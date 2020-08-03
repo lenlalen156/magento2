@@ -15,13 +15,13 @@ use Magento\Catalog\Test\Fixture\Category;
 
 /**
  * Preconditions:
- * 1. Create CMS Block.
+ * 1. Create CMS Index.
  *
  * Steps:
  * 1. Open Backend.
  * 2. Go to Content > Blocks.
  * 3. Open created CMS block.
- * 4. Click "Delete Block".
+ * 4. Click "Delete Index".
  * 5. Perform all assertions.
  *
  * @group CMS_Content
@@ -74,7 +74,7 @@ class DeleteCmsBlockEntityTest extends Injectable
     }
 
     /**
-     * Delete CMS Block.
+     * Delete CMS Index.
      *
      * @param CmsBlock $cmsBlock
      * @return array

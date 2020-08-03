@@ -62,7 +62,7 @@ class Map extends \Magento\Catalog\Test\Block\AbstractPriceBlock
     }
 
     /**
-     * Add product to shopping cart from MAP Block.
+     * Add product to shopping cart from MAP Index.
      *
      * @return void
      */
@@ -72,7 +72,7 @@ class Map extends \Magento\Catalog\Test\Block\AbstractPriceBlock
     }
 
     /**
-     * Close MAP Block.
+     * Close MAP Index.
      *
      * @return void
      */

@@ -145,7 +145,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
         $objectManager = Bootstrap::getObjectManager();
 
         $this->_model->setTemplateType(TemplateTypesInterface::TYPE_HTML);
-        $templateText = '{{var store.isSaveAllowed()}} - {{template config_path="foobar"}}';
+        $templateText = '{{var store.isSaveAllowed()}} - {{templates config_path="foobar"}}';
         $this->_model->setTemplateText($templateText);
 
         $template = $objectManager->create(\Magento\Email\Model\Template::class);
@@ -159,7 +159,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
         $template->setData($templateData);
         $template->save();
 
-        // Store the ID of the newly created template in the system config so that this template will be loaded
+        // Store the ID of the newly created templates in the system config so that this templates will be loaded
         $objectManager->get(\Magento\Framework\App\Config\MutableScopeConfigInterface::class)
             ->setValue('foobar', $template->getId(), ScopeInterface::SCOPE_STORE, 'default');
 
@@ -182,7 +182,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
         $objectManager = Bootstrap::getObjectManager();
 
         $this->_model->setTemplateType(TemplateTypesInterface::TYPE_HTML);
-        $templateText = '{{var store.isSaveAllowed()}} - {{template config_path="foobar"}}';
+        $templateText = '{{var store.isSaveAllowed()}} - {{templates config_path="foobar"}}';
         $this->_model->setTemplateText($templateText);
 
         $template = $objectManager->create(\Magento\Email\Model\Template::class);
@@ -195,7 +195,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
         $template->setData($templateData);
         $template->save();
 
-        // Store the ID of the newly created template in the system config so that this template will be loaded
+        // Store the ID of the newly created templates in the system config so that this templates will be loaded
         $objectManager->get(\Magento\Framework\App\Config\MutableScopeConfigInterface::class)
             ->setValue('foobar', $template->getId(), ScopeInterface::SCOPE_STORE, 'default');
 

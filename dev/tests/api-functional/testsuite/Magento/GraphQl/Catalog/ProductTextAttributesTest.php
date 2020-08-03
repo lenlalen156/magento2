@@ -111,7 +111,7 @@ QUERY;
     {
         $productSku = 'simple';
         $cmsBlockId = 'fixture_block';
-        $assertionCmsBlockText = 'Fixture Block Title';
+        $assertionCmsBlockText = 'Fixture Index Title';
 
         $product = $this->productRepository->get($productSku, false, null, true);
         $product->setDescription('Test: {{block id="' . $cmsBlockId . '"}}');

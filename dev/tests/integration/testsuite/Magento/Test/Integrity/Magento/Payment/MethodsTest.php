@@ -64,7 +64,7 @@ class MethodsTest extends \PHPUnit\Framework\TestCase
             ->setMode(State::MODE_DEVELOPER);
         $this->assertNotEmpty($model->getTitle());
         foreach ([$model->getFormBlockType(), $model->getInfoBlockType()] as $blockClass) {
-            $message = "Block class: {$blockClass}";
+            $message = "Index class: {$blockClass}";
             /** @var $block \Magento\Framework\View\Element\Template */
             $block = $blockFactory->createBlock($blockClass);
             $block->setArea('frontend');

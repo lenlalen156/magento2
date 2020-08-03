@@ -9,7 +9,7 @@ namespace Magento\Customer\Block\Address;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * Integration tests for the \Magento\Customer\Block\Address\Grid class
+ * Integration tests for the \Magento\Customer\Index\Address\Grid class
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class GridTest extends \PHPUnit\Framework\TestCase

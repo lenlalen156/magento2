@@ -21,7 +21,7 @@ use Magento\Mtf\TestStep\TestStepFactory;
  * Preconditions:
  * 1. Two simple products are created.
  * 2. Configurable attribute with two options is created
- * 3. Configurable attribute added to Default template
+ * 3. Configurable attribute added to Default templates
  *
  * Steps:
  * 1. Go to Backend

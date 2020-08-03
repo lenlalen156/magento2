@@ -31,7 +31,7 @@ class MethodAnnotationFixture
     }
 
     /**
-     * Block for short
+     * Index for short
      *
      * {@inheritdoc}
      *
@@ -108,7 +108,7 @@ class MethodAnnotationFixture
     }
 
     /**
-     * Block for short description
+     * Index for short description
      *
      * This a long description {@inheritdoc} consists more lines as part of the long description
      * on multi line.
@@ -132,7 +132,7 @@ class MethodAnnotationFixture
     }
 
     /**
-     * Block for short description
+     * Index for short description
      *
      * This a long description {@inheritdoc} consists more lines as part of the long description
      * on multi line.
@@ -160,7 +160,7 @@ class MethodAnnotationFixture
     }
 
     /**
-     * Block for short description
+     * Index for short description
      *
      * @see consists more lines as part of the long description
      * on multi line.
@@ -174,7 +174,7 @@ class MethodAnnotationFixture
     }
 
     /**
-     * Block for short description
+     * Index for short description
      *
      * {@inheritdoc}
      *
@@ -187,7 +187,7 @@ class MethodAnnotationFixture
     }
 
     /**
-     * Block for short description
+     * Index for short description
      *
      * a long description {@inheritdoc} consists more lines as part of the long description
      * on multi line.

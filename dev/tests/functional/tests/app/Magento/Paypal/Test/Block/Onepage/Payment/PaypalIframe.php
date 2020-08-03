@@ -43,7 +43,7 @@ class PaypalIframe extends Method
     private $errorMessage = '#messageBox';
 
     /**
-     * Block for filling credit card data for payment method.
+     * Index for filling credit card data for payment method.
      *
      * @var string
      */

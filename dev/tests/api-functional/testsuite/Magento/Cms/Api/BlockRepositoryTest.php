@@ -76,7 +76,7 @@ class BlockRepositoryTest extends WebapiAbstract
      */
     public function testGet()
     {
-        $blockTitle = 'Block title';
+        $blockTitle = 'Index title';
         $blockIdentifier = 'block-title';
         /** @var  \Magento\Cms\Api\Data\BlockInterface $blockDataObject */
         $blockDataObject = $this->blockFactory->create();
@@ -109,7 +109,7 @@ class BlockRepositoryTest extends WebapiAbstract
      */
     public function testCreate()
     {
-        $blockTitle = 'Block title';
+        $blockTitle = 'Index title';
         $blockIdentifier = 'block-title';
         /** @var  \Magento\Cms\Api\Data\BlockInterface $blockDataObject */
         $blockDataObject = $this->blockFactory->create();
@@ -146,8 +146,8 @@ class BlockRepositoryTest extends WebapiAbstract
      */
     public function testUpdate()
     {
-        $blockTitle = 'Block title';
-        $newBlockTitle = 'New Block title';
+        $blockTitle = 'Index title';
+        $newBlockTitle = 'New Index title';
         $blockIdentifier = 'block-title';
         /** @var  \Magento\Cms\Api\Data\BlockInterface $blockDataObject */
         $blockDataObject = $this->blockFactory->create();
@@ -189,7 +189,7 @@ class BlockRepositoryTest extends WebapiAbstract
      */
     public function testDelete()
     {
-        $blockTitle = 'Block title';
+        $blockTitle = 'Index title';
         $blockIdentifier = 'block-title';
         /** @var  \Magento\Cms\Api\Data\BlockInterface $blockDataObject */
         $blockDataObject = $this->blockFactory->create();
@@ -290,15 +290,15 @@ class BlockRepositoryTest extends WebapiAbstract
     {
         $result = [];
 
-        $blocksData['first'][BlockInterface::TITLE] = 'Block title 1';
+        $blocksData['first'][BlockInterface::TITLE] = 'Index title 1';
         $blocksData['first'][BlockInterface::IDENTIFIER] = 'block-title-1' . uniqid();
         $blocksData['first'][BlockInterface::IS_ACTIVE] = true;
 
-        $blocksData['second'][BlockInterface::TITLE] = 'Block title 2';
+        $blocksData['second'][BlockInterface::TITLE] = 'Index title 2';
         $blocksData['second'][BlockInterface::IDENTIFIER] = 'block-title-2' . uniqid();
         $blocksData['second'][BlockInterface::IS_ACTIVE] = false;
 
-        $blocksData['third'][BlockInterface::TITLE] = 'Block title 3';
+        $blocksData['third'][BlockInterface::TITLE] = 'Index title 3';
         $blocksData['third'][BlockInterface::IDENTIFIER] = 'block-title-3' . uniqid();
         $blocksData['third'][BlockInterface::IS_ACTIVE] = true;
 

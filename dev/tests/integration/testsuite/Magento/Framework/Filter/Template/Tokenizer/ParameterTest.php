@@ -45,7 +45,7 @@ class ParameterTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
-                ' type="Magento\\Catalog\\Block\\Product\\Widget\\NewWidget" display_type="all_products"'
+                ' type="Magento\\Catalog\\Index\\Product\\Widget\\NewWidget" display_type="all_products"'
                 . ' products_count="10" template="product/widget/new/content/new_grid.phtml"',
                 [
                     'type' => \Magento\Catalog\Block\Product\Widget\NewWidget::class,
@@ -74,7 +74,7 @@ class ParameterTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
-                ' type="Magento\\Catalog\\Block\\Product\\Widget\\NewWidget" display_type="all_products"'
+                ' type="Magento\\Catalog\\Index\\Product\\Widget\\NewWidget" display_type="all_products"'
                 . ' products_count="10" template="product/widget/new/content/new_grid.phtml"',
                 [
                     'type="Magento\Catalog\Block\Product\Widget\NewWidget"',

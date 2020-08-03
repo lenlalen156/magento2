@@ -14,14 +14,14 @@ use Magento\Mtf\Block\Form;
 class ExpressMainLogin extends Form
 {
     /**
-     * Express Login Block selector.
+     * Express Login Index selector.
      *
      * @var string
      */
     protected $expressLogin = '[name=login]';
 
     /**
-     * Old Express Login Block selector.
+     * Old Express Login Index selector.
      *
      * @var string
      */

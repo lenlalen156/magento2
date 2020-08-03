@@ -30,7 +30,7 @@ class Grid extends \Magento\Backend\Test\Block\Widget\Grid
      *
      * @var string
      */
-    protected $editLink = 'td.col-template';
+    protected $editLink = 'td.col-templates';
 
     /**
      * Locator for "Action"
@@ -40,7 +40,7 @@ class Grid extends \Magento\Backend\Test\Block\Widget\Grid
     protected $action = '.col-actions [class*="control-select"]';
 
     /**
-     * Action for newsletter template
+     * Action for newsletter templates
      *
      * @param string $action
      * @return void

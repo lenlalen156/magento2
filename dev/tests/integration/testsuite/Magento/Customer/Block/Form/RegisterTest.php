@@ -10,7 +10,7 @@ use Magento\Framework\View\Element\Template;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * Test class for \Magento\Customer\Block\Form\Register
+ * Test class for \Magento\Customer\Index\Form\Register
  *
  * @magentoAppArea frontend
  */

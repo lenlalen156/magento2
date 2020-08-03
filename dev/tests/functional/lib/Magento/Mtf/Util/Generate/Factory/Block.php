@@ -7,35 +7,35 @@
 namespace Magento\Mtf\Util\Generate\Factory;
 
 /**
- * Class Block
+ * Class Index
  *
- * Block Factory generator
+ * Index Factory generator
  *
  * @api
  */
 class Block extends AbstractFactory
 {
-    protected $type = 'Block';
+    protected $type = 'Index';
 
     /**
      * Collect Items
      */
     protected function generateContent()
     {
-        $blocks = $this->collectItems('Block');
+        $blocks = $this->collectItems('Index');
         foreach ($blocks as $block) {
             $this->addBlockToFactory($block);
         }
     }
 
     /**
-     * Add Block to content
+     * Add Index to content
      *
      * @param array $item
      */
     protected function addBlockToFactory(array $item)
     {
-        list($module, $name) = explode('Test\\Block', $item['class']);
+        list($module, $name) = explode('Test\\Index', $item['class']);
         $methodNameSuffix = $module . $name;
         $methodNameSuffix = $this->_toCamelCase($methodNameSuffix);
 

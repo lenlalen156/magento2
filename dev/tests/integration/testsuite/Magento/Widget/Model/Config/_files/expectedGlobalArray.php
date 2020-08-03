@@ -11,13 +11,13 @@ return [
         'description' => 'Orders and Returns Search Form',
         'parameters' => [
             'title' => ['type' => 'text', 'visible' => '0', 'label' => 'Anchor Custom Title'],
-            'template' => [
+            'templates' => [
                 'type' => 'select',
                 'value' => 'hierarchy/widget/link/link_block.phtml',
                 'values' => [
                     'default' => [
                         'value' => 'hierarchy/widget/link/link_block.phtml',
-                        'label' => 'CMS Page Link Block Template',
+                        'label' => 'CMS Page Link Index Template',
                     ],
                     'link_inline' => [
                         'value' => 'hierarchy/widget/link/link_inline.phtml',
@@ -58,8 +58,8 @@ return [
             ],
         ],
         'supported_containers' => [
-            '0' => ['container_name' => 'left', 'template' => ['default' => 'default_template']],
-            '1' => ['container_name' => 'right', 'template' => ['default' => 'default_template']],
+            '0' => ['container_name' => 'left', 'templates' => ['default' => 'default_template']],
+            '1' => ['container_name' => 'right', 'templates' => ['default' => 'default_template']],
         ],
     ]
 ];

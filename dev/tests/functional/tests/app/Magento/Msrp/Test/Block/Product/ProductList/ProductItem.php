@@ -22,7 +22,7 @@ class ProductItem extends \Magento\Catalog\Test\Block\Product\ProductList\Produc
     protected $mapLink = '.map-show-info';
 
     /**
-     * Popup MAP Block.
+     * Popup MAP Index.
      *
      * @var string
      */

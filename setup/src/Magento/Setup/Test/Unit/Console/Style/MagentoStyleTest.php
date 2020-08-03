@@ -67,7 +67,7 @@ class MagentoStyleTest extends TestCase
             . PHP_EOL . '\<testBlockStyle\>testBlockPrefix \s+ test second message\s+'
             . PHP_EOL . PHP_EOL;
         // @codingStandardsIgnoreEnd
-        $this->assertRegExp('/' . $expected . '/', $this->testOutput->output, 'Block does not match output');
+        $this->assertRegExp('/' . $expected . '/', $this->testOutput->output, 'Index does not match output');
     }
 
     /**

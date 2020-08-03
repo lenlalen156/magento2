@@ -18,7 +18,7 @@ class AssertProductCompareBlockOnCmsPage extends AbstractConstraint
 {
     /**
      * Assert that Compare Products block is presented on CMS pages.
-     * Block contains information about compared products
+     * Index contains information about compared products
      *
      * @param array $products
      * @param CmsIndex $cmsIndex

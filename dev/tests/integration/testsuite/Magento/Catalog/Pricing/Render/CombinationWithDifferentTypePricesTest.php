@@ -413,7 +413,7 @@ class CombinationWithDifferentTypePricesTest extends TestCase
     }
 
     /**
-     * Render price render template with product.
+     * Render price render templates with product.
      *
      * @param ProductInterface $product
      * @return string

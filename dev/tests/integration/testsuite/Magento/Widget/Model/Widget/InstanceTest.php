@@ -50,14 +50,14 @@ class InstanceTest extends \PHPUnit\Framework\TestCase
         if (isset(
             $config['parameters']
         ) && isset(
-            $config['parameters']['template']
+            $config['parameters']['templates']
         ) && isset(
-            $config['parameters']['template']['values']
+            $config['parameters']['templates']['values']
         ) && isset(
-            $config['parameters']['template']['values']['list']
+            $config['parameters']['templates']['values']['list']
         )
         ) {
-            $element = $config['parameters']['template']['values']['list'];
+            $element = $config['parameters']['templates']['values']['list'];
         }
         $expected = [
             'value' => 'product/widget/new/content/new_list.phtml',

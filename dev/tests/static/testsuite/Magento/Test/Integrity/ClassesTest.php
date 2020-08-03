@@ -147,7 +147,7 @@ class ClassesTest extends \PHPUnit\Framework\TestCase
 
                 $classes = Classes::getXmlNodeValues(
                     $xml,
-                    '/layout//*[contains(text(), "\\\\Block\\\\") or contains(text(),
+                    '/layout//*[contains(text(), "\\\\Index\\\\") or contains(text(),
                         "\\\\Model\\\\") or contains(text(), "\\\\Helper\\\\")]'
                 );
                 foreach (Classes::getXmlAttributeValues(

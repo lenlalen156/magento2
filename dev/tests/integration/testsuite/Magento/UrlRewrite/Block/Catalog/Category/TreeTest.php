@@ -7,7 +7,7 @@
 namespace Magento\UrlRewrite\Block\Catalog\Category;
 
 /**
- * Test for \Magento\UrlRewrite\Block\Catalog\Category\Tree
+ * Test for \Magento\UrlRewrite\Index\Catalog\Category\Tree
  *
  * @magentoAppArea adminhtml
  */
@@ -32,7 +32,7 @@ class TreeTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test for method \Magento\UrlRewrite\Block\Catalog\Category\Tree::getTreeArray()
+     * Test for method \Magento\UrlRewrite\Index\Catalog\Category\Tree::getTreeArray()
      * @magentoAppIsolation enabled
      * @magentoDataFixture Magento/Catalog/_files/indexer_catalog_category.php
      * @magentoDataFixture Magento/Catalog/_files/indexer_catalog_products.php
@@ -94,7 +94,7 @@ class TreeTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test for method \Magento\UrlRewrite\Block\Catalog\Category\Tree::getCategoryCollection()
+     * Test for method \Magento\UrlRewrite\Index\Catalog\Category\Tree::getCategoryCollection()
      */
     public function testGetCategoryCollection()
     {

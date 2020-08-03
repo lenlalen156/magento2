@@ -251,7 +251,7 @@ return [
     ['/app/code/Magento/SalesRule/Model/Quote/Nominal/Discount.php'],
     ['/app/code/Magento/Sales/Model/Quote/Address/Total/Nominal.php'],
     ['/app/code/Magento/Sales/Model/Quote/Address/Total/Nominal'],
-    ['/app/code/Magento/Checkout/Block/Total/Nominal.php'],
+    ['/app/code/Magento/Checkout/Index/Total/Nominal.php'],
     ['/app/code/Magento/Checkout/etc/sales.xml'],
     ['/app/code/Magento/Core/Model/TemplateEngine/Decorator/DebugHints.php'],
     ['/dev/tests/unit/testsuite/Magento/Core/Model/TemplateEngine/Decorator/DebugHints.php'],

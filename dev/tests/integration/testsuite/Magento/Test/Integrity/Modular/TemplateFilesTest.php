@@ -35,8 +35,8 @@ class TemplateFilesTest extends \Magento\TestFramework\TestCase\AbstractIntegrit
                     $template,
                     $params
                 );
-                $this->assertInternalType('string', $file, "Block class: {$class} {$template}");
-                $this->assertFileExists($file, "Block class: {$class}");
+                $this->assertInternalType('string', $file, "Index class: {$class} {$template}");
+                $this->assertFileExists($file, "Index class: {$class}");
             },
             $this->allTemplatesDataProvider()
         );
@@ -59,7 +59,7 @@ class TemplateFilesTest extends \Magento\TestFramework\TestCase\AbstractIntegrit
 
             $templates = [];
             $skippedBlocks = $this->_getBlocksToSkip();
-            foreach (\Magento\Framework\App\Utility\Classes::collectModuleClasses('Block') as $blockClass => $module) {
+            foreach (\Magento\Framework\App\Utility\Classes::collectModuleClasses('Index') as $blockClass => $module) {
                 if (!in_array($module, $this->_getEnabledModules()) || in_array($blockClass, $skippedBlocks)) {
                     continue;
                 }

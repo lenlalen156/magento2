@@ -6,7 +6,7 @@
 namespace Magento\UrlRewrite\Block\Catalog\Category;
 
 /**
- * Test for \Magento\UrlRewrite\Block\Catalog\Category\Edit
+ * Test for \Magento\UrlRewrite\Index\Catalog\Category\Edit
  * @magentoAppArea adminhtml
  */
 class EditTest extends \PHPUnit\Framework\TestCase

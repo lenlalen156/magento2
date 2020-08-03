@@ -43,7 +43,7 @@ class Method extends Block
     protected $waitElement = '.loading-mask';
 
     /**
-     * Block wait element.
+     * Index wait element.
      *
      * @var string
      */

@@ -86,7 +86,7 @@ class Method extends Block
             $module = $creditCard->hasData('payment_code') ? ucfirst($creditCard->getPaymentCode()) : 'Payment';
             /** @var \Magento\Payment\Test\Block\Form\PaymentCc $formBlock */
             $formBlock = $this->blockFactory->create(
-                "\\Magento\\{$module}\\Test\\Block\\Form\\{$module}Cc",
+                "\\Magento\\{$module}\\Test\\Index\\Form\\{$module}Cc",
                 ['element' => $this->_rootElement->find('#payment_form_' . $paymentMethod)]
             );
             $formBlock->fill($creditCard);

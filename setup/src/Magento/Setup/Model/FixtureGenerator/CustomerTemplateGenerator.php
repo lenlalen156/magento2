@@ -13,7 +13,7 @@ use Magento\Customer\Model\CustomerFactory;
 use Magento\Store\Model\StoreManagerInterface;
 
 /**
- * Product template generator
+ * Product templates generator
  */
 class CustomerTemplateGenerator implements TemplateEntityGeneratorInterface
 {
@@ -61,7 +61,7 @@ class CustomerTemplateGenerator implements TemplateEntityGeneratorInterface
     }
 
     /**
-     * Get customer template
+     * Get customer templates
      *
      * @return Customer
      */
@@ -100,7 +100,7 @@ class CustomerTemplateGenerator implements TemplateEntityGeneratorInterface
     }
 
     /**
-     * Get address template.
+     * Get address templates.
      *
      * @param int $customerId
      * @return Address

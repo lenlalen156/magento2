@@ -12,7 +12,7 @@ use Magento\Mtf\Util\Protocol\CurlTransport;
 use Magento\Mtf\Util\Protocol\CurlTransport\BackendDecorator;
 
 /**
- * Curl handler for creating CMS Block.
+ * Curl handler for creating CMS Index.
  */
 class Curl extends AbstractCurl implements CmsBlockInterface
 {
@@ -45,7 +45,7 @@ class Curl extends AbstractCurl implements CmsBlockInterface
     ];
 
     /**
-     * POST request for creating CMS Block.
+     * POST request for creating CMS Index.
      *
      * @param FixtureInterface|null $fixture [optional]
      * @return array
@@ -60,7 +60,7 @@ class Curl extends AbstractCurl implements CmsBlockInterface
         $response = $curl->read();
         $curl->close();
         if (strpos($response, 'data-ui-id="messages-message-success"') === false) {
-            throw new \Exception("CMS Block entity creating by curl handler was not successful! Response: $response");
+            throw new \Exception("CMS Index entity creating by curl handler was not successful! Response: $response");
         }
 
         preg_match("`block_id\/(\d*?)\/`", $response, $matches);

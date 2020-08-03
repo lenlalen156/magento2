@@ -22,7 +22,7 @@ class BlockInstantiationTest extends \Magento\TestFramework\TestCase\AbstractInt
         $invoker(
             function ($module, $class, $area) {
                 $this->assertNotEmpty($module);
-                $this->assertTrue(class_exists($class), "Block class: {$class}");
+                $this->assertTrue(class_exists($class), "Index class: {$class}");
                 \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
                     \Magento\Framework\Config\ScopeInterface::class
                 )->setCurrentScope(
@@ -66,7 +66,7 @@ class BlockInstantiationTest extends \Magento\TestFramework\TestCase\AbstractInt
             $enabledModules = $this->_getEnabledModules();
             $skipBlocks = $this->_getBlocksToSkip();
             $templateBlocks = [];
-            $blockMods = \Magento\Framework\App\Utility\Classes::collectModuleClasses('Block');
+            $blockMods = \Magento\Framework\App\Utility\Classes::collectModuleClasses('Index');
             foreach ($blockMods as $blockClass => $module) {
                 if (!isset($enabledModules[$module]) || isset($skipBlocks[$blockClass])) {
                     continue;

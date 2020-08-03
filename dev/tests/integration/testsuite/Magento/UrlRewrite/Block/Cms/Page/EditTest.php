@@ -6,7 +6,7 @@
 namespace Magento\UrlRewrite\Block\Cms\Page;
 
 /**
- * Test for \Magento\UrlRewrite\Block\Cms\Page\Edit
+ * Test for \Magento\UrlRewrite\Index\Cms\Page\Edit
  * @magentoAppArea adminhtml
  */
 class EditTest extends \PHPUnit\Framework\TestCase

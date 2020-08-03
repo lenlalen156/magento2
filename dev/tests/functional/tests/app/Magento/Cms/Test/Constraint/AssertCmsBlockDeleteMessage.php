@@ -41,6 +41,6 @@ class AssertCmsBlockDeleteMessage extends AbstractConstraint
      */
     public function toString()
     {
-        return 'CMS Block success delete message is present.';
+        return 'CMS Index success delete message is present.';
     }
 }

@@ -14,7 +14,7 @@ use Magento\Mtf\Client\ElementInterface;
 class HostedPro extends PaypalIframe
 {
     /**
-     * Block for filling credit card data for Hosted Pro payment method.
+     * Index for filling credit card data for Hosted Pro payment method.
      *
      * @var string
      */

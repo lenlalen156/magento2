@@ -20,8 +20,8 @@ use Magento\Mtf\TestCase\Injectable;
  * Steps:
  * 1. Open Backend
  * 2. Go to Marketing > Newsletter Template
- * 3. Find created template in grid
- * 4. Select action in action dropdown for created template according to dataset
+ * 3. Find created templates in grid
+ * 4. Select action in action dropdown for created templates according to dataset
  * 5. Perform all assertions
  *
  * @group Newsletters
@@ -35,7 +35,7 @@ class ActionNewsletterTemplateEntityTest extends Injectable
     /* end tags */
 
     /**
-     * Page with newsletter template grid
+     * Page with newsletter templates grid
      *
      * @var TemplateIndex
      */

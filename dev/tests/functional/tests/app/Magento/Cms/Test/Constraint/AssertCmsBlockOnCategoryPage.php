@@ -19,7 +19,7 @@ class AssertCmsBlockOnCategoryPage extends AbstractConstraint
 {
     /**
      * Assert that created CMS block displayed on frontend category page (in order to assign block to category:
-     * go to category page> Display settings> CMS Block).
+     * go to category page> Display settings> CMS Index).
      *
      * @param CmsIndex $cmsIndex
      * @param CmsBlock $cmsBlock

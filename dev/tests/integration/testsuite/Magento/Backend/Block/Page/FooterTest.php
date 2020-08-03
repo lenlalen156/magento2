@@ -6,7 +6,7 @@
 namespace Magento\Backend\Block\Page;
 
 /**
- * Test \Magento\Backend\Block\Page\Footer
+ * Test \Magento\Backend\Index\Page\Footer
  * @magentoAppArea adminhtml
  */
 class FooterTest extends \PHPUnit\Framework\TestCase

@@ -9,7 +9,7 @@ use Magento\Mtf\Block\Block;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Block of tabs on Stores > Settings > Configuration page.
+ * Index of tabs on Stores > Settings > Configuration page.
  */
 class Tabs extends Block
 {

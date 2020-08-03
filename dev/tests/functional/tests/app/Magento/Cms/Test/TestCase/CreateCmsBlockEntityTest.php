@@ -15,7 +15,7 @@ use Magento\Cms\Test\Fixture\CmsBlock;
  * Steps:
  * 1. Open Backend.
  * 2. Go to Content > Blocks.
- * 3. Click "Add New Block" button.
+ * 3. Click "Add New Index" button.
  * 4. Fill data according to dataset.
  * 5. Perform all assertions.
  *
@@ -31,7 +31,7 @@ class CreateCmsBlockEntityTest extends AbstractCmsBlockEntityTest
     /* end tags */
 
     /**
-     * Create CMS Block.
+     * Create CMS Index.
      *
      * @param CmsBlock $cmsBlock
      * @return void

@@ -19,7 +19,7 @@ use Magento\Mtf\Constraint\AbstractConstraint;
 class AssertCategoryPage extends AbstractConstraint
 {
     /**
-     * CMS Block display mode.
+     * CMS Index display mode.
      *
      * @var array
      */
@@ -152,7 +152,7 @@ class AssertCategoryPage extends AbstractConstraint
     /**
      * Verify category Content data:
      * # Description
-     * # CMS Block content
+     * # CMS Index content
      *
      * @param array $categoryData
      * @return array

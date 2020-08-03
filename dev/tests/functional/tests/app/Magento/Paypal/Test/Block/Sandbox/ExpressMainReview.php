@@ -14,7 +14,7 @@ use Magento\Mtf\Block\Block;
 class ExpressMainReview extends Block
 {
     /**
-     * Express Review Block selector.
+     * Express Review Index selector.
      *
      * @var string
      */

@@ -5,7 +5,7 @@
  */
 
 /**
- * Test class for \Magento\Customer\Block\Widget\Dob
+ * Test class for \Magento\Customer\Index\Widget\Dob
  */
 namespace Magento\Customer\Block\Widget;
 

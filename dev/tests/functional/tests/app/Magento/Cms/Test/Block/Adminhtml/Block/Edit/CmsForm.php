@@ -11,7 +11,7 @@ use Magento\Mtf\Client\Element\SimpleElement;
 use Magento\Mtf\Fixture\FixtureInterface;
 
 /**
- * Form for Cms Block creation.
+ * Form for Cms Index creation.
  */
 class CmsForm extends Form
 {
@@ -23,7 +23,7 @@ class CmsForm extends Form
     protected $toggleButton = "#toggleblock_content";
 
     /**
-     * CMS Block Content area.
+     * CMS Index Content area.
      *
      * @var string
      */

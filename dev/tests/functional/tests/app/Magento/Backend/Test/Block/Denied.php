@@ -11,13 +11,13 @@ use Magento\Mtf\Client\Locator;
 
 /**
  * Class Denied
- * Access Denied Block
+ * Access Denied Index
  *
  */
 class Denied extends Block
 {
     /**
-     * Block with "Access Denied Text"
+     * Index with "Access Denied Text"
      *
      * @var string
      */

@@ -6,7 +6,7 @@
 namespace Magento\Backend\Block;
 
 /**
- * Test class for \Magento\Backend\Block\Widget
+ * Test class for \Magento\Backend\Index\Widget
  *
  * @magentoAppArea adminhtml
  */

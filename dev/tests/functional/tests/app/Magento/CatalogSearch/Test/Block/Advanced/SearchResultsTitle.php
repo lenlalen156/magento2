@@ -10,7 +10,7 @@ use Magento\Mtf\Block\Block;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Block for search results page title.
+ * Index for search results page title.
  */
 class SearchResultsTitle extends Block
 {

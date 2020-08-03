@@ -87,7 +87,7 @@ class TemplatesTest extends \PHPUnit\Framework\TestCase
     {
         $virtual = \Magento\Framework\App\Utility\Classes::getVirtualClasses();
         foreach ($virtual as $className => $resolvedName) {
-            if (strpos($resolvedName, 'Block') !== false) {
+            if (strpos($resolvedName, 'Index') !== false) {
                 $matches = [];
                 preg_match('/([A-Za-z0-9]+\\\\[A-Za-z0-9]+).*/', $className, $matches);
                 if (count($matches) > 1) {
