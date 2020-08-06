@@ -1,5 +1,5 @@
 <?php
-namespacePackt\HelloWorld\Model\ResourceModel\Subscription;
+namespace Packt\HelloWorld\Model\ResourceModel\Subscription;
 /**
  * Subscription Collection
  */
@@ -9,7 +9,7 @@ class Collection extends
     /**
      * Initialize resource collection
      *
-     * @return void
+     * @return voidstyles-m.css
      */
     public function _construct() {
         $this->_init('Packt\HelloWorld\Model\Subscription',

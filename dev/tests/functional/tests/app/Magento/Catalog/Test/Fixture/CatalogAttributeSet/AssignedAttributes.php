@@ -11,7 +11,7 @@ use Magento\Mtf\Fixture\FixtureFactory;
 use Magento\Catalog\Test\Fixture\CatalogProductAttribute;
 
 /**
- * Assigned attributes source.
+ * Assigned attributes sources.
  *
  *  Data keys:
  *  - dataset

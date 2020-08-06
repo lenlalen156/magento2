@@ -13,7 +13,7 @@ use Magento\Mtf\Fixture\InjectableFixture;
 use Magento\Mtf\Repository\RepositoryFactory;
 
 /**
- * Grouped selections source.
+ * Grouped selections sources.
  */
 class Associated extends DataSource
 {

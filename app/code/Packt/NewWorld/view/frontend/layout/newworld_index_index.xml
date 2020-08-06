@@ -15,5 +15,36 @@ ge_configuration.xsd">
             <block class="Packt\NewWorld\Block\Display" name="newworld_display" template="Packt_NewWorld::sayhello.phtml" />
         </referenceContainer>
 
+
+        <referenceBlock name="footer">
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_column_1">
+                <block class="Packt\NewWorld\Block\Display" name="newworld_display" template="Packt_NewWorld::footercolumn1.phtml" />
+
+
+
+
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer  links</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="myaccount-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string">My  account</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="my-cartlink">
+                    <arguments>
+                        <argument name="label" xsi:type="string">My cart</argument>
+                        <argument name="path" xsi:type="string">checkout/cart</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceBlock>
+
+
+
+
+
+
     </body>
 </page>
