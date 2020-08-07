@@ -106,7 +106,6 @@
     padding-bottom: 0;
   }
 
-
   .main-content-first{
     //position: relative;
   }
@@ -117,7 +116,7 @@
   .main-content-first .block-content-five-mini{
     width: 24vw;
     position: absolute;
-    margin: -34vw 0 0 62vw;
+    margin: -35em 0 0 62vw;
     text-align: center;
   }
   .main-content-first .block-content-five-mini .content_five_mini_child_5_2 strong{
@@ -193,6 +192,9 @@
   }
 
   .content-four{}
+  .content-four img{
+    width: 100%;
+  }
   .content-four .main-content-four-child-2{
     position: absolute;
     width: 20vw;
@@ -215,6 +217,7 @@
     display: inline-block;
   }
   .footer.content{
+    padding: 0 50px 30px 50px;
     border-top:unset;
     max-width: unset;
     .block{
@@ -233,12 +236,64 @@
   .footer.content .footer.links.about.adornmonde li a{
     color: black;
   }
-  .block.newsletter .action.subscribe {
+  .footer.content .block.newsletter .content input[type="email"] {
+    border: 1px solid black;
+    height: 40px;
+  }
+  .footer.content .block.newsletter .field .control:before {
+    line-height: 40px;
+  }
+  .footer.content .block.newsletter .action.subscribe {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-radius: 0px;
     margin-left: -6px;
+    height: 40px;
   }
+
+  .bottom-content-footer{
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+  }
+  .bottom-content-footer .bottom-content-footer-left{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  .bottom-content-footer .bottom-content-footer-left .content-footer-left-1{
+    grid-column: 1;
+  }
+  .bottom-content-footer .bottom-content-footer-left .content-footer-left-1,
+  .bottom-content-footer .bottom-content-footer-left .content-footer-left-1 p{
+    width: max-content;
+  }
+  .bottom-content-footer .bottom-content-footer-left .content-footer-left-1 img{
+    width: 60px;
+  }
+  .bottom-content-footer .bottom-content-footer-left .content-footer-left-2{
+    padding-top:5px;
+    grid-column: 2 / 13;
+  }
+  .bottom-content-footer .bottom-content-footer-left .content-footer-left-2 a{
+    color: black;
+  }
+  .bottom-content-footer .bottom-content-footer-left .content-footer-left-2 .p-link,
+  .bottom-content-footer .bottom-content-footer-left .content-footer-left-2 .p-stick{
+    display: inline-block;
+    padding:  0 10px 0 0;
+    font-weight: bold;
+  }
+  .bottom-content-footer .bottom-content-footer-right {}
+  .bottom-content-footer .bottom-content-footer-right img{
+    float: right;
+    padding: 0 10px;
+    height: 40px;
+  }
+
+
+
+
+
 
   .action.primary {
     background: black;

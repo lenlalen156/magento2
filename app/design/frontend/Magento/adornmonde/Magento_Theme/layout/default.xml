@@ -19,7 +19,7 @@ ge_configuration.xsd">
         <referenceBlock name="absolute_footer" remove="true" />
         <referenceBlock name="footer_links" remove="true" />
         <!--<referenceBlock name="footer_links" remove="true" />-->
-        <!--<referenceBlock name="copyright" remove="true" />-->
+        <referenceBlock name="top.links" remove="true" />
 
         <referenceBlock name="store_switcher" remove="true" />
         <referenceContainer name="div.sidebar.additional" remove="true"/>
@@ -33,7 +33,7 @@ ge_configuration.xsd">
 
 
         <!--create-->
-
+        <!--text on top of the header-->
         <referenceContainer name="header.panel">
             <block class="Magento\Cms\Block\Block" name="block_header">
                 <arguments>
@@ -44,33 +44,42 @@ ge_configuration.xsd">
 
         <!--main content-->
         <referenceContainer name="main"  >
-
-            <!--<container name="main-content-first" htmlTag="div" htmlClass="main-content-one content-first">-->
-                <!--<container name="main-content-first-child" htmlTag="div" htmlClass="main-content-first" >-->
+            <!--content first-->
+            <container name="main-content-first" htmlTag="div" htmlClass="main-content-one content-first">
+                <container name="main-content-first-child" htmlTag="div" htmlClass="main-content-first" >
                     <!--<block class="Magento\Cms\Block\Block" name="img_8">-->
                         <!--<arguments>-->
                             <!--<argument name="block_id" xsi:type="string">img_8</argument>-->
                         <!--</arguments>-->
                     <!--</block>-->
-                    <!--<container htmlTag="div" htmlClass="block-content-five-mini">-->
-                        <!--<container htmlTag="div" htmlClass="content_five_mini_child_5_1">-->
-                            <!--<block class="Magento\Cms\Block\Block" name="content_five_mini_child_5_1">-->
-                                <!--<arguments>-->
-                                    <!--<argument name="block_id" xsi:type="string">content_five_mini_child_5_1</argument>-->
-                                <!--</arguments>-->
-                            <!--</block>-->
-                        <!--</container>-->
-                        <!--<container htmlTag="div" htmlClass="content_five_mini_child_5_2">-->
-                            <!--<block class="Magento\Cms\Block\Block" name="content_five_mini_child_5_2">-->
-                                <!--<arguments>-->
-                                    <!--<argument name="block_id" xsi:type="string">content_five_mini_child_5_2</argument>-->
-                                <!--</arguments>-->
-                            <!--</block>-->
-                        <!--</container>-->
-                    <!--</container>-->
+                    <container htmlTag="div" htmlClass="block-content-five-mini">
+                        <container htmlTag="div" htmlClass="content_five_mini_child_5_1">
+                            <block class="Magento\Cms\Block\Block" name="content_five_mini_child_5_1">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_five_mini_child_5_1</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                        <container htmlTag="div" htmlClass="content_five_mini_child_5_2">
+                            <block class="Magento\Cms\Block\Block" name="content_five_mini_child_5_2">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_five_mini_child_5_2</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                    </container>
 
-                <!--</container>-->
-            <!--</container>-->
+                </container>
+            </container>
+
+            <!--slide products-->
+            <container name="main-content-slide" htmlTag="div" htmlClass="main-content-slide content-slide">
+
+
+
+                <block class="Magento\Framework\View\Element\Template" name="slide-products" template="Magento_Theme::slide_products.phtml"/>
+                <!--<block class="Magento\Catalog\Block\Product\ListProduct" name="slide-products" template="Magento_Catalog::list.phtml"/>-->
+            </container>
 
             <!--content one-->
             <container name="main-content-one" htmlTag="div" htmlClass="main-content-one content-one">
@@ -352,7 +361,32 @@ ge_configuration.xsd">
                     </arguments>
                 </block>
             </block>
+            <container htmlTag="div" htmlClass="bottom-content-footer">
+                <container htmlTag="div" htmlClass="bottom-content-footer-left">
+                    <container htmlTag="div" htmlClass="content-footer-left-1">
+                        <block class="Magento\Cms\Block\Block" name="content_footer_left_1">
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">content_footer_left_1</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                    <container htmlTag="div" htmlClass="content-footer-left-2">
+                        <block class="Magento\Cms\Block\Block" name="content_footer_left_2">
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">content_footer_left_2</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                </container>
 
+                <container htmlTag="div" htmlClass="bottom-content-footer-right">
+                    <block class="Magento\Cms\Block\Block" name="content_footer_right">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">content_footer_right</argument>
+                        </arguments>
+                    </block>
+                </container>
+            </container>
         </referenceBlock>
 
 
