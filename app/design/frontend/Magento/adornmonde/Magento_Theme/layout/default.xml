@@ -28,19 +28,16 @@ ge_configuration.xsd">
 
         <referenceBlock name="store_switcher" remove="true" />
         <referenceContainer name="div.sidebar.additional" remove="true"/>
-
+        <referenceBlock name="top.search" remove="true"/>
 
 
         <!--move -->
         <move element="store_language" as="store_language" destination="header-wrapper" before="logo" />
         <move element="store.settings.currency" as="store.settings.currency" destination="header-wrapper" after="store_language" />
-        <!--<move element="authorization-link" as="authorization-link" destination="header-wrapper" before="action.showcart"/>-->
+        <move element="store.menu" as="store.menu" destination="header-wrapper"  />
+
 
         <!--create-->
-
-
-
-
 
         <referenceContainer name="header.panel">
             <block class="Magento\Cms\Block\Block" name="block_header">
@@ -50,34 +47,223 @@ ge_configuration.xsd">
             </block>
         </referenceContainer>
 
+        <!--main content-->
         <referenceContainer name="main"  >
-            <container name="main-top-content" htmlTag="div" htmlClass="main-top-content row">
-                <container name="main-top-content-child-1" htmlTag="div" htmlClass="col-6" >
+
+            <!--<container name="main-content-first" htmlTag="div" htmlClass="main-content-one content-first">-->
+                <!--<container name="main-content-first-child" htmlTag="div" htmlClass="main-content-first" >-->
+                    <!--<block class="Magento\Cms\Block\Block" name="img_8">-->
+                        <!--<arguments>-->
+                            <!--<argument name="block_id" xsi:type="string">img_8</argument>-->
+                        <!--</arguments>-->
+                    <!--</block>-->
+                    <!--<container htmlTag="div" htmlClass="block-content-five-mini">-->
+                        <!--<container htmlTag="div" htmlClass="content_five_mini_child_5_1">-->
+                            <!--<block class="Magento\Cms\Block\Block" name="content_five_mini_child_5_1">-->
+                                <!--<arguments>-->
+                                    <!--<argument name="block_id" xsi:type="string">content_five_mini_child_5_1</argument>-->
+                                <!--</arguments>-->
+                            <!--</block>-->
+                        <!--</container>-->
+                        <!--<container htmlTag="div" htmlClass="content_five_mini_child_5_2">-->
+                            <!--<block class="Magento\Cms\Block\Block" name="content_five_mini_child_5_2">-->
+                                <!--<arguments>-->
+                                    <!--<argument name="block_id" xsi:type="string">content_five_mini_child_5_2</argument>-->
+                                <!--</arguments>-->
+                            <!--</block>-->
+                        <!--</container>-->
+                    <!--</container>-->
+
+                <!--</container>-->
+            <!--</container>-->
+
+            <!--content one-->
+            <container name="main-content-one" htmlTag="div" htmlClass="main-content-one content-one">
+                <container name="main-content-one-child-1" htmlTag="div" htmlClass="main-content-one-child-1" >
                     <block class="Magento\Cms\Block\Block" name="img_1">
                         <arguments>
                             <argument name="block_id" xsi:type="string">img_1</argument>
                         </arguments>
                     </block>
+
+                    <container htmlTag="div" htmlClass="content-one-child">
+                        <container htmlTag="div" htmlClass="content-one-mini-child-1-1">
+                            <block class="Magento\Cms\Block\Block" name="content_one_mini_child_1_1">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_one_mini_child_1_1</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                        <container htmlTag="div" htmlClass="content-one-mini-child-1-2">
+                            <block class="Magento\Cms\Block\Block" name="content_one_mini_child_1_2">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_one_mini_child_1_2</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                    </container>
                 </container>
-                <container name="main-top-content-child-2" htmlTag="div" htmlClass="col-6" >
+
+                <container name="main-content-one-child-2" htmlTag="div" htmlClass="ain-content-one-child-2" >
                     <block class="Magento\Cms\Block\Block" name="img_2">
                         <arguments>
                             <argument name="block_id" xsi:type="string">img_2</argument>
                         </arguments>
                     </block>
-
-                    <block class="Magento\Block\Display" name="image_1" template="Magento_Theme::image_1.phtml"/>
+                    <container htmlTag="div" htmlClass="content-one-child">
+                        <container htmlTag="div" htmlClass="content-one-mini-child-2-1">
+                            <block class="Magento\Cms\Block\Block" name="content_one_mini_child_2_1">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_one_mini_child_2_1</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                        <container htmlTag="div" htmlClass="content-one-mini-child-2-2">
+                            <block class="Magento\Cms\Block\Block" name="content_one_mini_child_2_2">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_one_mini_child_2_2</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                    </container>
                 </container>
+            </container>
+
+            <!--content two-->
+            <container name="main-content-two" htmlTag="div" htmlClass="main-content-two content-two">
+                <container name="main-content-two-child-1" htmlTag="div" htmlClass="main-content-two-child-1-1" >
+                    <block class="Magento\Cms\Block\Block" name="img_3">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">img_3</argument>
+                        </arguments>
+                    </block>
+                </container>
+
+                <container name="main-content-two-child-2" htmlTag="div" htmlClass="main-content-two-child-1-2" >
+                    <container htmlTag="div" htmlClass="content-two-mini-child-1-1">
+                        <block class="Magento\Cms\Block\Block" name="content_two_mini_child_1_1">
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">content_two_mini_child_1_1</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                    <container htmlTag="div" htmlClass="content-two-mini-child-1-2">
+                        <block class="Magento\Cms\Block\Block" name="content_two_mini_child_1_2">
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">content_two_mini_child_1_2</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                </container>
+            </container>
+
+            <!--content three-->
+            <container name="main-content-three" htmlTag="div" htmlClass="main-content-three content-three">
+                <container name="main-content-three-child-1" htmlTag="div" htmlClass="main-content-three-child-1-1" >
+                    <block class="Magento\Cms\Block\Block" name="img_4">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">img_4</argument>
+                        </arguments>
+                    </block>
+                    <container name="content-three-mini-child-1" htmlTag="div" htmlClass="main-content-three-child-1-2" >
+                        <container htmlTag="div" htmlClass="content-three-mini-child-1-1">
+                            <block class="Magento\Cms\Block\Block" name="content_three_mini_child_1_1">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_three_mini_child_1_1</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                        <container htmlTag="div" htmlClass="content-three-mini-child-1-2">
+                            <block class="Magento\Cms\Block\Block" name="content_three_mini_child_1_2">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_three_mini_child_1_2</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                    </container>
+                </container>
+
+                <container name="content-three-mini-child-2" htmlTag="div" htmlClass="main-content-three-child-2-1" >
+                    <block class="Magento\Cms\Block\Block" name="img_5">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">img_5</argument>
+                        </arguments>
+                    </block>
+                    <container name="main-content-three-child-2-2" htmlTag="div" htmlClass="main-content-three-child-2-2" >
+                        <container htmlTag="div" htmlClass="content-three-mini-child-1-1">
+                            <block class="Magento\Cms\Block\Block" name="content_three_mini_child_2_1">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_three_mini_child_2_1</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                        <container htmlTag="div" htmlClass="content-three-mini-child-2-2">
+                            <block class="Magento\Cms\Block\Block" name="content_three_mini_child_2_2">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_three_mini_child_2_2</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                    </container>
+                </container>
+
+                <container name="content-three-mini-child-3" htmlTag="div" htmlClass="main-content-three-child-3-1" >
+                    <block class="Magento\Cms\Block\Block" name="img_7">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">img_7</argument>
+                        </arguments>
+                    </block>
+                    <container name="main-content-three-child-3-2" htmlTag="div" htmlClass="main-content-three-child-3-2" >
+                        <container htmlTag="div" htmlClass="content-three-mini-child-3-1">
+                            <block class="Magento\Cms\Block\Block" name="content_three_mini_child_3_1">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_three_mini_child_3_1</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                        <container htmlTag="div" htmlClass="content-three-mini-child-3-2">
+                            <block class="Magento\Cms\Block\Block" name="content_three_mini_child_3_2">
+                                <arguments>
+                                    <argument name="block_id" xsi:type="string">content_three_mini_child_3_2</argument>
+                                </arguments>
+                            </block>
+                        </container>
+                    </container>
+                </container>
+            </container>
+
+            <!--content four-->
+            <container name="main-content-four" htmlTag="div" htmlClass="main-content-four content-four">
+                <container name="main-content-four-child-1" htmlTag="div" htmlClass="main-content-four-child-1" >
+                    <block class="Magento\Cms\Block\Block" name="img_6">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">img_6</argument>
+                        </arguments>
+                    </block>
+                </container>
+                <container name="main-content-four-child-2" htmlTag="div" htmlClass="main-content-four-child-2" >
+                    <container htmlTag="div" htmlClass="content-four-mini-child-4-1">
+                        <block class="Magento\Cms\Block\Block" name="content_four_mini_child_4_1">
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">content_four_mini_child_4_1</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                    <container htmlTag="div" htmlClass="content-four-mini-child-4-2">
+                        <block class="Magento\Cms\Block\Block" name="content_four_mini_child_4_2">
+                            <arguments>
+                                <argument name="block_id" xsi:type="string">content_four_mini_child_4_2</argument>
+                            </arguments>
+                        </block>
+                    </container>
+                </container>
+
             </container>
 
 
         </referenceContainer>
 
-
-
-
-
-
+        <!--footer-->
         <referenceBlock name="footer">
             <block class="Magento\Framework\View\Element\Html\Links" name="footer_account" before="-">
                 <arguments>
