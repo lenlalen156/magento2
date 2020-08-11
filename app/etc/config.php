@@ -261,13 +261,12 @@ return [
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
-        'Packt_HelloWorld' => 0,
-        'Packt_NewWorld' => 0,
-        'Packt_SEO' => 1,
+        'Packt_HelloWorld' => 1,
+        'Packt_NewWorld' => 1,
         'Temando_ShippingRemover' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidation' => 1,
-        'Ymagento' => 0,
+        'Ymagento' => 1,
         'Yotpo_Yotpo' => 1
     ]
 ];
