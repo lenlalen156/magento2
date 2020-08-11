@@ -4,7 +4,6 @@
 ge_configuration.xsd">
     <head>
         <css src="css/adornmonde.css" />>
-        <css src="css/owl.carousel.css"/>
         <script src="js/adornmonde.js" />
     </head>
 </page>
